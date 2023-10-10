@@ -1,0 +1,35 @@
+<component name="ProjectDictionaryState">
+  <dictionary name="me">
+    <words>
+      <w>breaktk</w>
+      <w>consttk</w>
+      <w>continuetk</w>
+      <w>elsetk</w>
+      <w>fortk</w>
+      <w>getintk</w>
+      <w>getinttk</w>
+      <w>grammartype</w>
+      <w>idenfr</w>
+      <w>iftk</w>
+      <w>intcon</w>
+      <w>inttk</w>
+      <w>invalidtk</w>
+      <w>lbrack</w>
+      <w>lparent</w>
+      <w>maindebug</w>
+      <w>maintk</w>
+      <w>minu</w>
+      <w>mult</w>
+      <w>printftk</w>
+      <w>rbrack</w>
+      <w>returntk</w>
+      <w>rparent</w>
+      <w>semicn</w>
+      <w>strcon</w>
+      <w>tokentype</w>
+      <w>unknowed</w>
+      <w>voidtk</w>
+      <w>voidtl</w>
+    </words>
+  </dictionary>
+</component>
