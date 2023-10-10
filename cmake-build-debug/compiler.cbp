@@ -101,6 +101,12 @@
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Parser.h">
 			<Option target="compiler"/>
 		</Unit>
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol.cpp">
+			<Option target="compiler"/>
+		</Unit>
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol.h">
+			<Option target="compiler"/>
+		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Token.cpp">
 			<Option target="compiler"/>
 		</Unit>

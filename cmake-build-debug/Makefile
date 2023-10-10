@@ -203,6 +203,33 @@ Parser.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Parser.cpp.s
 .PHONY : Parser.cpp.s
 
+Symbol.obj: Symbol.cpp.obj
+
+.PHONY : Symbol.obj
+
+# target to build an object file
+Symbol.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.obj
+.PHONY : Symbol.cpp.obj
+
+Symbol.i: Symbol.cpp.i
+
+.PHONY : Symbol.i
+
+# target to preprocess a source file
+Symbol.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.i
+.PHONY : Symbol.cpp.i
+
+Symbol.s: Symbol.cpp.s
+
+.PHONY : Symbol.s
+
+# target to generate assembly for a file
+Symbol.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.s
+.PHONY : Symbol.cpp.s
+
 Token.obj: Token.cpp.obj
 
 .PHONY : Token.obj
@@ -302,6 +329,9 @@ help:
 	@echo ... Parser.obj
 	@echo ... Parser.i
 	@echo ... Parser.s
+	@echo ... Symbol.obj
+	@echo ... Symbol.i
+	@echo ... Symbol.s
 	@echo ... Token.obj
 	@echo ... Token.i
 	@echo ... Token.s
