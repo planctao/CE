@@ -147,6 +147,45 @@ CMakeFiles/compiler.dir/Symbol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Symbol.cpp.s"
 	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Symbol.cpp -o CMakeFiles\compiler.dir\Symbol.cpp.s
 
+CMakeFiles/compiler.dir/SymbolTable.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/SymbolTable.cpp.obj: ../SymbolTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/compiler.dir/SymbolTable.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\SymbolTable.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\SymbolTable.cpp
+
+CMakeFiles/compiler.dir/SymbolTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/SymbolTable.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\SymbolTable.cpp > CMakeFiles\compiler.dir\SymbolTable.cpp.i
+
+CMakeFiles/compiler.dir/SymbolTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/SymbolTable.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\SymbolTable.cpp -o CMakeFiles\compiler.dir\SymbolTable.cpp.s
+
+CMakeFiles/compiler.dir/Error.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/Error.cpp.obj: ../Error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/compiler.dir/Error.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\Error.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\Error.cpp
+
+CMakeFiles/compiler.dir/Error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/Error.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\Error.cpp > CMakeFiles\compiler.dir\Error.cpp.i
+
+CMakeFiles/compiler.dir/Error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Error.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Error.cpp -o CMakeFiles\compiler.dir\Error.cpp.s
+
+CMakeFiles/compiler.dir/ErrorToken.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/ErrorToken.cpp.obj: ../ErrorToken.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/compiler.dir/ErrorToken.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\ErrorToken.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\ErrorToken.cpp
+
+CMakeFiles/compiler.dir/ErrorToken.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/ErrorToken.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\ErrorToken.cpp > CMakeFiles\compiler.dir\ErrorToken.cpp.i
+
+CMakeFiles/compiler.dir/ErrorToken.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/ErrorToken.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\ErrorToken.cpp -o CMakeFiles\compiler.dir\ErrorToken.cpp.s
+
 # Object files for target compiler
 compiler_OBJECTS = \
 "CMakeFiles/compiler.dir/main.cpp.obj" \
@@ -155,7 +194,10 @@ compiler_OBJECTS = \
 "CMakeFiles/compiler.dir/utils.cpp.obj" \
 "CMakeFiles/compiler.dir/Parser.cpp.obj" \
 "CMakeFiles/compiler.dir/Node.cpp.obj" \
-"CMakeFiles/compiler.dir/Symbol.cpp.obj"
+"CMakeFiles/compiler.dir/Symbol.cpp.obj" \
+"CMakeFiles/compiler.dir/SymbolTable.cpp.obj" \
+"CMakeFiles/compiler.dir/Error.cpp.obj" \
+"CMakeFiles/compiler.dir/ErrorToken.cpp.obj"
 
 # External object files for target compiler
 compiler_EXTERNAL_OBJECTS =
@@ -167,11 +209,14 @@ compiler.exe: CMakeFiles/compiler.dir/utils.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Parser.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Node.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Symbol.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/SymbolTable.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/Error.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/ErrorToken.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/build.make
 compiler.exe: CMakeFiles/compiler.dir/linklibs.rsp
 compiler.exe: CMakeFiles/compiler.dir/objects1.rsp
 compiler.exe: CMakeFiles/compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable compiler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable compiler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\compiler.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

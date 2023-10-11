@@ -43,6 +43,10 @@ Token Node::getToken() {
     return this->leafToken;
 }
 
+GrammarType Node::getGrammarType() {
+    return this->grammarType;
+}
+
 void Node::output() {
     for(Node tmpNode : this->children) {
         if(tmpNode.isLeaf()) {

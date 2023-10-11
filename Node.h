@@ -26,6 +26,7 @@ public:
     Token getToken();
     void output();
     void fileWrite(std::vector<std::string>& a);
+    GrammarType getGrammarType();
 };
 
 

@@ -122,6 +122,60 @@ compiler/fast:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/build
 .PHONY : compiler/fast
 
+Error.obj: Error.cpp.obj
+
+.PHONY : Error.obj
+
+# target to build an object file
+Error.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.obj
+.PHONY : Error.cpp.obj
+
+Error.i: Error.cpp.i
+
+.PHONY : Error.i
+
+# target to preprocess a source file
+Error.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.i
+.PHONY : Error.cpp.i
+
+Error.s: Error.cpp.s
+
+.PHONY : Error.s
+
+# target to generate assembly for a file
+Error.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.s
+.PHONY : Error.cpp.s
+
+ErrorToken.obj: ErrorToken.cpp.obj
+
+.PHONY : ErrorToken.obj
+
+# target to build an object file
+ErrorToken.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.obj
+.PHONY : ErrorToken.cpp.obj
+
+ErrorToken.i: ErrorToken.cpp.i
+
+.PHONY : ErrorToken.i
+
+# target to preprocess a source file
+ErrorToken.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.i
+.PHONY : ErrorToken.cpp.i
+
+ErrorToken.s: ErrorToken.cpp.s
+
+.PHONY : ErrorToken.s
+
+# target to generate assembly for a file
+ErrorToken.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.s
+.PHONY : ErrorToken.cpp.s
+
 Lexer.obj: Lexer.cpp.obj
 
 .PHONY : Lexer.obj
@@ -230,6 +284,33 @@ Symbol.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.s
 .PHONY : Symbol.cpp.s
 
+SymbolTable.obj: SymbolTable.cpp.obj
+
+.PHONY : SymbolTable.obj
+
+# target to build an object file
+SymbolTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.obj
+.PHONY : SymbolTable.cpp.obj
+
+SymbolTable.i: SymbolTable.cpp.i
+
+.PHONY : SymbolTable.i
+
+# target to preprocess a source file
+SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.i
+.PHONY : SymbolTable.cpp.i
+
+SymbolTable.s: SymbolTable.cpp.s
+
+.PHONY : SymbolTable.s
+
+# target to generate assembly for a file
+SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.s
+.PHONY : SymbolTable.cpp.s
+
 Token.obj: Token.cpp.obj
 
 .PHONY : Token.obj
@@ -320,6 +401,12 @@ help:
 	@echo ... compiler
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Error.obj
+	@echo ... Error.i
+	@echo ... Error.s
+	@echo ... ErrorToken.obj
+	@echo ... ErrorToken.i
+	@echo ... ErrorToken.s
 	@echo ... Lexer.obj
 	@echo ... Lexer.i
 	@echo ... Lexer.s
@@ -332,6 +419,9 @@ help:
 	@echo ... Symbol.obj
 	@echo ... Symbol.i
 	@echo ... Symbol.s
+	@echo ... SymbolTable.obj
+	@echo ... SymbolTable.i
+	@echo ... SymbolTable.s
 	@echo ... Token.obj
 	@echo ... Token.i
 	@echo ... Token.s

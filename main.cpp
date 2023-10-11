@@ -1,6 +1,7 @@
 #include <iostream>
 #include"Lexer.h"
 #include"Parser.h"
+#include"Error.h"
 #include<vector>
 //#define MAINDEBUG 1
 //#define TEST 1
@@ -47,7 +48,8 @@ int main(int argc, char* argv[]) {
 #else
     Parser parser(input_path);
     Node tmpNode = parser.parse();
-    parser.output();
+    Error error(std::move(tmpNode));
+    error.check();
 #endif
     return 0;
 }
