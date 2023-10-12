@@ -21,6 +21,7 @@ public:
     std::string type2Str();
     std::string getValue();
     TokenType getType();
+    int getLine();
     void writeFile(std::vector<std::string>& a);
 };
 

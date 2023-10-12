@@ -28,7 +28,7 @@ private:
 
 public:
     Symbol(int id,int tableId,std::string tokenValue,int kind);
-
+    std::string getTokenValue();
 };
 
 

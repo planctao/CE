@@ -13,6 +13,7 @@
 #include"Lexer.h"
 #include"Token.h"
 #include"Node.h"
+#include"SymbolTable.h"
 //#define DEBUG 1
 //#define FUNC_DEBUG 1
 //#define MAIN_DEBUG 1
@@ -23,6 +24,7 @@ private:
     int cursor;
     std::vector<Token> tokens;
     Node root;
+    std::map<int,SymbolTable> symbolTableMap;
     std::ofstream fout;
 public:
     void output();
@@ -71,6 +73,7 @@ public:
     int parseUnaryOp(int pos, Node *tmpNode);
 
     int parseBType(int pos, Node* tmpNode);
+
 };
 
 

@@ -15,6 +15,8 @@ public:
     explicit Error(Node node);
     void check();
     void output();
+    void establish_and_findError();
+
 };
 
 

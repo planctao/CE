@@ -22,3 +22,10 @@ void Error::check() {
 void Error::output() {
 
 }
+
+
+void Error::establish_and_findError() {
+    for (Node tmpNode : this->root.getChildren()) {
+
+    }
+}

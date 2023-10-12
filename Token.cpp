@@ -43,3 +43,7 @@ TokenType Token::getType() {
     return this->type;
 }
 
+int Token::getLine() {
+    return this->line;
+}
+

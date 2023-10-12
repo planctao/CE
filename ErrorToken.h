@@ -8,7 +8,11 @@
 
 class ErrorToken {
 private:
-
+    int line;
+    char type;
+    int pos;
+public:
+    ErrorToken(char type,int line,int pos);
 };
 
 

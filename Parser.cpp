@@ -2,7 +2,7 @@
 // Created by me on 2023/9/26.
 //
 #include "Parser.h"
-Parser::Parser(const char *path) :lexer{path}, root{Node(nullptr,GrammarType::CompUnit)}{
+Parser::Parser(const char *path) :lexer{path}, root{Node(nullptr,GrammarType::CompUnit,0)}{
     this->cursor = 0;
     this->fout.open("output.txt");
 }
@@ -18,7 +18,7 @@ void Parser::output() {
 
 /*Exp → AddExp*/
 int Parser::parseExp(int pos, Node* tmpNode) {
-    Node expNode = Node(tmpNode,GrammarType::Exp);
+    Node expNode = Node(tmpNode,GrammarType::Exp,pos);
     pos = parseAddExp(pos,&expNode);
     tmpNode->addChild(expNode);
     return pos;
@@ -26,21 +26,21 @@ int Parser::parseExp(int pos, Node* tmpNode) {
 
 /*Number → IntConst*/
 int Parser::parseNumber(int pos, Node* tmpNode) {
-    Node numberNode = Node(tmpNode,GrammarType::Number);
-    numberNode.addLeaf(tokens[pos]);pos++;
+    Node numberNode = Node(tmpNode,GrammarType::Number,pos);
+    numberNode.addLeaf(tokens[pos],pos);pos++;
     tmpNode->addChild(numberNode);
     return pos;
 } //ok
 
 /*LVal → Ident {'[' Exp ']'}*/
 int Parser::parseLVal(int pos, Node* tmpNode) {
-    Node LValNode = Node(tmpNode,GrammarType::LVal);
-    LValNode.addLeaf(tokens[pos]);pos++;
+    Node LValNode = Node(tmpNode,GrammarType::LVal,pos);
+    LValNode.addLeaf(tokens[pos],pos);pos++;
     while(tokens[pos].getValue() == "[") {
-        LValNode.addLeaf(tokens[pos]);pos++;
+        LValNode.addLeaf(tokens[pos],pos);pos++;
         pos = parseExp(pos,&LValNode);
         if (tokens[pos].getValue() == "]") {
-            LValNode.addLeaf(tokens[pos]);pos++;
+            LValNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     tmpNode->addChild(LValNode);
@@ -49,11 +49,11 @@ int Parser::parseLVal(int pos, Node* tmpNode) {
 
 /*PrimaryExp → '(' Exp ')' | LVal | Number*/
 int Parser::parsePrimaryExp(int pos, Node* tmpNode) {
-    Node primaryExpNode = Node(tmpNode,GrammarType::PrimaryExp);
+    Node primaryExpNode = Node(tmpNode,GrammarType::PrimaryExp,pos);
     if (tokens[pos].getValue() == "(") {
-        primaryExpNode.addLeaf(tokens[pos]);pos++;
+        primaryExpNode.addLeaf(tokens[pos],pos);pos++;
         pos = parseExp(pos,&primaryExpNode);
-        primaryExpNode.addLeaf(tokens[pos]);pos++;
+        primaryExpNode.addLeaf(tokens[pos],pos);pos++;
     }
     else if(tokens[pos].type2Str() == "INTCON") {
         pos = parseNumber(pos,&primaryExpNode);
@@ -67,10 +67,10 @@ int Parser::parsePrimaryExp(int pos, Node* tmpNode) {
 
 /*FuncRParams → Exp { ',' Exp }*/
 int Parser::parseFuncRParams(int pos, Node* tmpNode) {
-    Node funcRParamsNode = Node(tmpNode,GrammarType::FuncRParams);
+    Node funcRParamsNode = Node(tmpNode,GrammarType::FuncRParams,pos);
     pos = parseExp(pos,&funcRParamsNode);
     while(tokens[pos].getValue() == ",") {
-        funcRParamsNode.addLeaf(tokens[pos]);pos++;
+        funcRParamsNode.addLeaf(tokens[pos],pos);pos++;
         pos = parseExp(pos,&funcRParamsNode);
     }
     tmpNode->addChild(funcRParamsNode);
@@ -79,18 +79,18 @@ int Parser::parseFuncRParams(int pos, Node* tmpNode) {
 
 /*UnaryOp → '+' | '−' | '!'*/
 int Parser::parseUnaryOp(int pos, Node *tmpNode) {
-    Node unaryOpNode = Node(tmpNode,GrammarType::UnaryOp);
-    unaryOpNode.addLeaf(tokens[pos]);pos++;
+    Node unaryOpNode = Node(tmpNode,GrammarType::UnaryOp,pos);
+    unaryOpNode.addLeaf(tokens[pos],pos);pos++;
     tmpNode->addChild(unaryOpNode);
     return pos;
 }
 
 /*UnaryExp → PrimaryExp | Ident '(' [FuncRParams] ')' | UnaryOp UnaryExp*/
 int Parser::parseUnaryExp(int pos, Node* tmpNode) {
-    Node unaryExpNode = Node(tmpNode,GrammarType::UnaryExp);
+    Node unaryExpNode = Node(tmpNode,GrammarType::UnaryExp,pos);
     if (pos + 1 < tokens.size() && tokens[pos].getType() == TokenType::IDENFR && tokens[pos + 1].getValue() == "(") {
-        unaryExpNode.addLeaf(tokens[pos]);pos++;
-        unaryExpNode.addLeaf(tokens[pos]);pos++;
+        unaryExpNode.addLeaf(tokens[pos],pos);pos++;
+        unaryExpNode.addLeaf(tokens[pos],pos);pos++;
         if (tokens[pos].getType() == TokenType::PLUS ||
             tokens[pos].getType() == TokenType::MINU ||
             tokens[pos].getType() == TokenType::NOT ||
@@ -100,7 +100,7 @@ int Parser::parseUnaryExp(int pos, Node* tmpNode) {
             pos = parseFuncRParams(pos,&unaryExpNode);
         }
         if (tokens[pos].getValue() == ")") {
-            unaryExpNode.addLeaf(tokens[pos]);pos++;
+            unaryExpNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     else if (tokens[pos].getValue() == "+" || tokens[pos].getValue() == "-" || tokens[pos].getValue() == "!"){
@@ -117,22 +117,17 @@ int Parser::parseUnaryExp(int pos, Node* tmpNode) {
 /*MulExp → UnaryExp | MulExp ('*' | '/' | '%')*/
 int Parser::parseMulExp(int pos, Node* tmpNode) {
     std::stack<Node> st;
-    Node baseMulExp = Node(nullptr,GrammarType::MulExp);
+    Node baseMulExp = Node(nullptr,GrammarType::MulExp,pos);
     pos = parseUnaryExp(pos,&baseMulExp);
     st.push(baseMulExp);
     while(tokens[pos].getValue() == "*" || tokens[pos].getValue() == "/" || tokens[pos].getValue() == "%") {
-        if (true) {
-            Node mulExpNode = Node(nullptr,GrammarType::MulExp);
-            mulExpNode.addChild(st.top());st.top().setParent(&mulExpNode);
-            mulExpNode.addLeaf(tokens[pos]);pos++;
-
-            pos = parseUnaryExp(pos,&mulExpNode);
-            st.push(mulExpNode);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseUnaryExp(pos,&st.top());
-        }
+        Node mulExpNode = Node(nullptr, GrammarType::MulExp, pos);
+        mulExpNode.addChild(st.top());
+        st.top().setParent(&mulExpNode);
+        mulExpNode.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseUnaryExp(pos, &mulExpNode);
+        st.push(mulExpNode);
     }
     Node ansNode = st.top();
     st.pop();
@@ -144,22 +139,17 @@ int Parser::parseMulExp(int pos, Node* tmpNode) {
 /*AddExp → MulExp | AddExp ('+' | '−') MulExp*/
 int Parser::parseAddExp(int pos, Node* tmpNode) {
     std::stack<Node> st;
-    Node baseAddExp = Node(nullptr,GrammarType::AddExp);
+    Node baseAddExp = Node(nullptr,GrammarType::AddExp,pos);
     pos = parseMulExp(pos,&baseAddExp);
     st.push(baseAddExp);
     while(tokens[pos].getValue() == "+" || tokens[pos].getValue() == "-") {
-        if (true) {
-            Node addExpNode = Node(nullptr,GrammarType::AddExp);
-            addExpNode.addChild(st.top());
-            st.top().setParent(&addExpNode);
-            addExpNode.addLeaf(tokens[pos]);pos++;
-            pos = parseMulExp(pos,&addExpNode);
-            st.push(addExpNode);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseMulExp(pos,&st.top());
-        }
+        Node addExpNode = Node(nullptr, GrammarType::AddExp, pos);
+        addExpNode.addChild(st.top());
+        st.top().setParent(&addExpNode);
+        addExpNode.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseMulExp(pos, &addExpNode);
+        st.push(addExpNode);
     }
     Node ansNode = st.top();
     st.pop();
@@ -171,23 +161,18 @@ int Parser::parseAddExp(int pos, Node* tmpNode) {
 /*RelExp → AddExp | RelExp ('<' | '>' | '<=' | '>=') AddExp*/
 int Parser::parseRelExp(int pos, Node *tmpNode) {
     std::stack<Node> st;
-    Node baseRelExp = Node(nullptr,GrammarType::RelExp);
+    Node baseRelExp = Node(nullptr,GrammarType::RelExp,pos);
     pos = parseAddExp(pos,&baseRelExp);
     st.push(baseRelExp);
     while(tokens[pos].getValue() == "<" || tokens[pos].getValue() == ">" ||
         tokens[pos].getValue() == "<=" || tokens[pos].getValue() == ">=") {
-        if (true) {
-            Node relExpNode = Node(nullptr,GrammarType::RelExp);
-            relExpNode.addChild(st.top());
-            st.top().setParent(&relExpNode);
-            relExpNode.addLeaf(tokens[pos]);pos++;
-            pos = parseAddExp(pos,&relExpNode);
-            st.push(relExpNode);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseAddExp(pos,&st.top());
-        }
+        Node relExpNode = Node(nullptr, GrammarType::RelExp, pos);
+        relExpNode.addChild(st.top());
+        st.top().setParent(&relExpNode);
+        relExpNode.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseAddExp(pos, &relExpNode);
+        st.push(relExpNode);
     }
     Node ansNode = st.top();
     st.pop();
@@ -199,22 +184,17 @@ int Parser::parseRelExp(int pos, Node *tmpNode) {
 /*EqExp → RelExp | EqExp ('==' | '!=') RelExp*/
 int Parser::parseEqExp(int pos, Node*tmpNode) {
     std::stack<Node> st;
-    Node baseEqExp = Node(nullptr,GrammarType::EqExp);
+    Node baseEqExp = Node(nullptr,GrammarType::EqExp,pos);
     pos = parseRelExp(pos,&baseEqExp);
     st.push(baseEqExp);
     while(tokens[pos].getValue() == "==" || tokens[pos].getValue() == "!=") {
-        if (true) {
-            Node EqExp = Node(nullptr,GrammarType::EqExp);
-            EqExp.addChild(st.top());
-            st.top().setParent(&EqExp);
-            EqExp.addLeaf(tokens[pos]);pos++;
-            pos = parseRelExp(pos,&EqExp);
-            st.push(EqExp);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseRelExp(pos,&st.top());
-        }
+        Node EqExp = Node(nullptr, GrammarType::EqExp, pos);
+        EqExp.addChild(st.top());
+        st.top().setParent(&EqExp);
+        EqExp.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseRelExp(pos, &EqExp);
+        st.push(EqExp);
     }
     Node ansNode = st.top();
     st.pop();
@@ -226,22 +206,17 @@ int Parser::parseEqExp(int pos, Node*tmpNode) {
 /* LAndExp → EqExp | LAndExp '&&' EqExp*/
 int Parser::parseLAndExp(int pos, Node *tmpNode) {
     std::stack<Node> st;
-    Node baseLAndExp = Node(nullptr,GrammarType::LAndExp);
+    Node baseLAndExp = Node(nullptr,GrammarType::LAndExp,pos);
     pos = parseEqExp(pos,&baseLAndExp);
     st.push(baseLAndExp);
     while(tokens[pos].getValue() == "&&") {
-        if (true) {
-            Node LAndExp = Node(nullptr,GrammarType::LAndExp);
-            LAndExp.addChild(st.top());
-            st.top().setParent(&LAndExp);
-            LAndExp.addLeaf(tokens[pos]);pos++;
-            pos = parseEqExp(pos,&LAndExp);
-            st.push(LAndExp);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseEqExp(pos,&st.top());
-        }
+        Node LAndExp = Node(nullptr, GrammarType::LAndExp, pos);
+        LAndExp.addChild(st.top());
+        st.top().setParent(&LAndExp);
+        LAndExp.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseEqExp(pos, &LAndExp);
+        st.push(LAndExp);
     }
     Node ansNode = st.top();
     st.pop();
@@ -253,22 +228,17 @@ int Parser::parseLAndExp(int pos, Node *tmpNode) {
 /*LOrExp → LAndExp | LOrExp '||' LAndExp*/
 int Parser::parseLOrExp(int pos, Node *tmpNode) {
     std::stack<Node> st;
-    Node baseLOrExp = Node(nullptr,GrammarType::LOrExp);
+    Node baseLOrExp = Node(nullptr,GrammarType::LOrExp,pos);
     pos = parseLAndExp(pos,&baseLOrExp);
     st.push(baseLOrExp);
     while(tokens[pos].getValue() == "||") {
-        if (true) {
-            Node lOrExp = Node(nullptr,GrammarType::LOrExp);
-            lOrExp.addChild(st.top());
-            st.top().setParent(&lOrExp);
-            lOrExp.addLeaf(tokens[pos]);pos++;
-            pos = parseLAndExp(pos,&lOrExp);
-            st.push(lOrExp);
-        }
-        else {
-            st.top().addLeaf(tokens[pos]);pos++;
-            pos = parseLAndExp(pos,&st.top());
-        }
+        Node lOrExp = Node(nullptr, GrammarType::LOrExp, pos);
+        lOrExp.addChild(st.top());
+        st.top().setParent(&lOrExp);
+        lOrExp.addLeaf(tokens[pos], pos);
+        pos++;
+        pos = parseLAndExp(pos, &lOrExp);
+        st.push(lOrExp);
     }
     Node ansNode = st.top();
     st.pop();
@@ -279,7 +249,7 @@ int Parser::parseLOrExp(int pos, Node *tmpNode) {
 
 /*ConstExp → AddExp*/
 int Parser::parseConstExp(int pos, Node* tmpNode) {
-    Node constExpNode = Node(tmpNode,GrammarType::ConstExp);
+    Node constExpNode = Node(tmpNode,GrammarType::ConstExp,pos);
     pos = parseAddExp(pos,&constExpNode);
     tmpNode->addChild(constExpNode);
     return pos;
@@ -287,18 +257,18 @@ int Parser::parseConstExp(int pos, Node* tmpNode) {
 
 /*ConstInitVal → ConstExp | '{' [ ConstInitVal { ',' ConstInitVal } ] '}'*/
 int Parser::parseConstInitVal(int pos, Node* tmpNode) {
-    Node constInitValNode = Node(tmpNode,GrammarType::ConstInitVal);
+    Node constInitValNode = Node(tmpNode,GrammarType::ConstInitVal,pos);
     if (tokens[pos].getValue() == "{") {
-        constInitValNode.addLeaf(tokens[pos]);
+        constInitValNode.addLeaf(tokens[pos],pos);
         pos++;
         while(true) {
             if (tokens[pos].getValue() == "}") {
-                constInitValNode.addLeaf(tokens[pos]);
+                constInitValNode.addLeaf(tokens[pos],pos);
                 pos++;
                 break;
             }
             else if (tokens[pos].getValue() == ",") {
-                constInitValNode.addLeaf(tokens[pos]);
+                constInitValNode.addLeaf(tokens[pos],pos);
                 pos++;
             }
             else {
@@ -315,23 +285,23 @@ int Parser::parseConstInitVal(int pos, Node* tmpNode) {
 
 /*ConstDef → Ident { '[' ConstExp ']' } '=' ConstInitVal*/
 int Parser::parseConstDef(int pos, Node* tmpNode) {
-    Node constDefNode = Node(tmpNode,GrammarType::ConstDef);
-    constDefNode.addLeaf(tokens[pos]);pos++;// Ident
+    Node constDefNode = Node(tmpNode,GrammarType::ConstDef,pos);
+    constDefNode.addLeaf(tokens[pos],pos);pos++;// Ident
     if (tokens[pos].getValue() == "[") {
-        constDefNode.addLeaf(tokens[pos]);pos++;//[
+        constDefNode.addLeaf(tokens[pos],pos);pos++;//[
         pos = parseConstExp(pos,&constDefNode);//constExp
         if (tokens[pos].getValue() == "]") {
-            constDefNode.addLeaf(tokens[pos]);pos++;
+            constDefNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     if (pos < tokens.size() && tokens[pos].getValue() == "[") {
-        constDefNode.addLeaf(tokens[pos]);pos++;//[
+        constDefNode.addLeaf(tokens[pos],pos);pos++;//[
         pos = parseConstExp(pos,&constDefNode);
         if (tokens[pos].getValue() == "]") {
-            constDefNode.addLeaf(tokens[pos]);pos++;
+            constDefNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
-    constDefNode.addLeaf(tokens[pos]);pos++;//=
+    constDefNode.addLeaf(tokens[pos],pos);pos++;//=
     pos = parseConstInitVal(pos,&constDefNode);
     tmpNode->addChild(constDefNode);
     return pos;
@@ -339,17 +309,17 @@ int Parser::parseConstDef(int pos, Node* tmpNode) {
 
 /*VarDef → Ident { '[' ConstExp ']' } | Ident { '[' ConstExp ']' } '=' InitVal */
 int Parser::parseVarDef(int pos, Node* tmpNode) {
-    Node varDefNode = Node(tmpNode,GrammarType::VarDef);
-    varDefNode.addLeaf(tokens[pos]);pos++;//Ident
+    Node varDefNode = Node(tmpNode,GrammarType::VarDef,pos);
+    varDefNode.addLeaf(tokens[pos],pos);pos++;//Ident
     while (tokens[pos].getValue() == "[") {
-        varDefNode.addLeaf(tokens[pos]);pos++;//'['
+        varDefNode.addLeaf(tokens[pos],pos);pos++;//'['
         pos = parseConstExp(pos,&varDefNode);
         if (tokens[pos].getValue() == "]") {
-            varDefNode.addLeaf(tokens[pos]);pos++;//']'
+            varDefNode.addLeaf(tokens[pos],pos);pos++;//']'
         }
     }
     if (tokens[pos].getValue() == "=") {
-        varDefNode.addLeaf(tokens[pos]);pos++;//=
+        varDefNode.addLeaf(tokens[pos],pos);pos++;//=
         pos = parseInitVal(pos,&varDefNode);
     }
     tmpNode->addChild(varDefNode);
@@ -358,18 +328,18 @@ int Parser::parseVarDef(int pos, Node* tmpNode) {
 
 /*InitVal → Exp | '{' [ InitVal { ',' InitVal } ] '}'*/
 int Parser::parseInitVal(int pos, Node* tmpNode){
-    Node initValNode = Node(tmpNode,GrammarType::InitVal);
+    Node initValNode = Node(tmpNode,GrammarType::InitVal,pos);
     if (tokens[pos].getValue() == "{") {
-        initValNode.addLeaf(tokens[pos]);
+        initValNode.addLeaf(tokens[pos],pos);
         pos++;
         while(true) {
             if (tokens[pos].getValue() == "}") {
-                initValNode.addLeaf(tokens[pos]);
+                initValNode.addLeaf(tokens[pos],pos);
                 pos++;
                 break;
             }
             else if (tokens[pos].getValue() == ",") {
-                initValNode.addLeaf(tokens[pos]);
+                initValNode.addLeaf(tokens[pos],pos);
                 pos++;
             }
             else {
@@ -385,7 +355,7 @@ int Parser::parseInitVal(int pos, Node* tmpNode){
 }
 
 int Parser::parseDecl(int pos, Node* tmpNode) {
-    Node declNode = Node(tmpNode,GrammarType::Decl);
+    Node declNode = Node(tmpNode,GrammarType::Decl,pos);
     if (tokens[pos].getValue() == "const") {//const declare
         pos = parseConstDecl(pos, &declNode);
     }
@@ -398,18 +368,18 @@ int Parser::parseDecl(int pos, Node* tmpNode) {
 
 /*ConstDecl → 'const' BType ConstDef { ',' ConstDef } ';'*/
 int Parser::parseConstDecl(int pos, Node* tmpNode) {
-    Node constDeclNode = Node(tmpNode,GrammarType::ConstDecl);
-    constDeclNode.addLeaf(tokens[pos]);//加入const这个终结符
+    Node constDeclNode = Node(tmpNode,GrammarType::ConstDecl,pos);
+    constDeclNode.addLeaf(tokens[pos],pos);//加入const这个终结符
     pos++;
     pos = parseBType(pos,&constDeclNode);//parse BType
     while(true) {
         pos = parseConstDef(pos,&constDeclNode);
         if (tokens[pos].getValue() == ",") {
-            constDeclNode.addLeaf(tokens[pos]);
+            constDeclNode.addLeaf(tokens[pos],pos);
             pos++;
         }
         else if (tokens[pos].getValue() == ";") {
-            constDeclNode.addLeaf(tokens[pos]);pos++;
+            constDeclNode.addLeaf(tokens[pos],pos);pos++;
             break;
         }
         else {
@@ -423,17 +393,17 @@ int Parser::parseConstDecl(int pos, Node* tmpNode) {
 /*VarDecl → BType VarDef { ',' VarDef } ';'*/
 int Parser::parseVarDecl(int pos, Node* tmpNode) {
     //writeFile(tokens[pos]);//int
-    Node varDeclNode = Node(tmpNode,GrammarType::VarDecl);
+    Node varDeclNode = Node(tmpNode,GrammarType::VarDecl,pos);
     pos = parseBType(pos,&varDeclNode);//BType
     pos = parseVarDef(pos,&varDeclNode);//VarDef
     while(true) {
         if (tokens[pos].getValue() == ",") {
-            varDeclNode.addLeaf(tokens[pos]);
+            varDeclNode.addLeaf(tokens[pos],pos);
             pos++;
             pos = parseVarDef(pos,&varDeclNode);
         }
         else if (tokens[pos].getValue() == ";"){// ;
-            varDeclNode.addLeaf(tokens[pos]);pos++;
+            varDeclNode.addLeaf(tokens[pos],pos);pos++;
             break;
         }
         else { //error
@@ -446,10 +416,10 @@ int Parser::parseVarDecl(int pos, Node* tmpNode) {
 
 /*FuncDef → FuncType Ident '(' [FuncFParams] ')' Block*/
 int Parser::parseFuncDef(int pos, Node* tmpNode) {
-    Node funcDefNode(tmpNode,GrammarType::FuncDef);//FuncType
+    Node funcDefNode(tmpNode,GrammarType::FuncDef,pos);//FuncType
     pos = parseFuncType(pos,&funcDefNode);
-    funcDefNode.addLeaf(tokens[pos]);pos++;
-    funcDefNode.addLeaf(tokens[pos]);pos++;
+    funcDefNode.addLeaf(tokens[pos],pos);pos++;
+    funcDefNode.addLeaf(tokens[pos],pos);pos++;
     if (tokens[pos].getType() == TokenType::PLUS ||
         tokens[pos].getType() == TokenType::MINU ||
         tokens[pos].getType() == TokenType::NOT ||
@@ -459,7 +429,7 @@ int Parser::parseFuncDef(int pos, Node* tmpNode) {
         pos = parseFuncFParams(pos,&funcDefNode);//FuncFParams
     }
     if (tokens[pos].getValue() == ")") {
-        funcDefNode.addLeaf(tokens[pos]);pos++;//)
+        funcDefNode.addLeaf(tokens[pos],pos);pos++;//)
     }
     pos = parseBlock(pos,&funcDefNode);
     tmpNode->addChild(funcDefNode);
@@ -468,8 +438,8 @@ int Parser::parseFuncDef(int pos, Node* tmpNode) {
 
 /*FuncType → 'void' | 'int'*/
 int Parser::parseFuncType(int pos, Node* tmpNode) {
-    Node funcTypeNode = Node(tmpNode,GrammarType::FuncType);
-    funcTypeNode.addLeaf(tokens[pos]);
+    Node funcTypeNode = Node(tmpNode,GrammarType::FuncType,pos);
+    funcTypeNode.addLeaf(tokens[pos],pos);
     tmpNode->addChild(funcTypeNode);
     pos++;
     return pos;
@@ -477,10 +447,10 @@ int Parser::parseFuncType(int pos, Node* tmpNode) {
 
 /*FuncFParams → FuncFParam { ',' FuncFParam }*/
 int Parser::parseFuncFParams(int pos, Node *tmpNode) {
-    Node funcFParamsNode = Node(tmpNode,GrammarType::FuncFParams);
+    Node funcFParamsNode = Node(tmpNode,GrammarType::FuncFParams,pos);
     pos = parseFuncFParam(pos,&funcFParamsNode);
     while(tokens[pos].getValue() == ",") {
-        funcFParamsNode.addLeaf(tokens[pos]);
+        funcFParamsNode.addLeaf(tokens[pos],pos);
         pos++;
         pos = parseFuncFParam(pos, &funcFParamsNode);
     }
@@ -490,19 +460,19 @@ int Parser::parseFuncFParams(int pos, Node *tmpNode) {
 
 /* FuncFParam → BType Ident ['[' ']' { '[' ConstExp ']' }] */
 int Parser::parseFuncFParam(int pos,Node *tmpNode) {
-    Node funcFParamNode = Node(tmpNode,GrammarType::FuncFParam);
+    Node funcFParamNode = Node(tmpNode,GrammarType::FuncFParam,pos);
     pos = parseBType(pos,&funcFParamNode);//BType
-    funcFParamNode.addLeaf(tokens[pos]);pos++; //Ident
+    funcFParamNode.addLeaf(tokens[pos],pos);pos++; //Ident
     if (tokens[pos].getValue() == "[") {
-        funcFParamNode.addLeaf(tokens[pos]);pos++;// [
+        funcFParamNode.addLeaf(tokens[pos],pos);pos++;// [
         if (tokens[pos].getValue() == "]") {
-            funcFParamNode.addLeaf(tokens[pos]);pos++;
+            funcFParamNode.addLeaf(tokens[pos],pos);pos++;
         }
         while(tokens[pos].getValue() == "[") {
-            funcFParamNode.addLeaf(tokens[pos]);pos++;//[
+            funcFParamNode.addLeaf(tokens[pos],pos);pos++;//[
             pos = parseConstExp(pos,&funcFParamNode);
             if (tokens[pos].getValue() == "]") {
-                funcFParamNode.addLeaf(tokens[pos]);pos++;
+                funcFParamNode.addLeaf(tokens[pos],pos);pos++;
             }
         }
     }
@@ -512,9 +482,9 @@ int Parser::parseFuncFParam(int pos,Node *tmpNode) {
 
 /* MainFuncDef → 'int' 'main' '(' ')' Block*/
 int Parser::parseMainFuncDef(int pos, Node* tmpNode) {
-    Node mainFuncDefNode(tmpNode,GrammarType::MainFuncDef);
+    Node mainFuncDefNode(tmpNode,GrammarType::MainFuncDef,pos);
     for (int i = pos;i <= pos + 3;i++) {
-        mainFuncDefNode.addLeaf(tokens[i]);
+        mainFuncDefNode.addLeaf(tokens[i],pos);
     }
     pos = pos + 4;
     pos = parseBlock(pos,&mainFuncDefNode);
@@ -524,19 +494,19 @@ int Parser::parseMainFuncDef(int pos, Node* tmpNode) {
 
 /*Block → '{' { BlockItem } '}'*/
 int Parser::parseBlock(int pos, Node* tmpNode) {
-    Node blockNode = Node(tmpNode,GrammarType::Block);
-    blockNode.addLeaf(tokens[pos]);pos++;
+    Node blockNode = Node(tmpNode,GrammarType::Block,pos);
+    blockNode.addLeaf(tokens[pos],pos);pos++;
     while(tokens[pos].getValue() != "}") {
         pos = parseBlockItem(pos,&blockNode);
     }
-    blockNode.addLeaf(tokens[pos]);pos++;
+    blockNode.addLeaf(tokens[pos],pos);pos++;
     tmpNode->addChild(blockNode);
     return pos;
 }
 
 /*BlockItem → Decl | Stmt*/
 int Parser::parseBlockItem(int pos, Node *tmpNode) {
-    Node blockItemNode = Node(tmpNode,GrammarType::BlockItem);
+    Node blockItemNode = Node(tmpNode,GrammarType::BlockItem,pos);
     if (tokens[pos].getValue() == "int" || tokens[pos].getValue() == "const") {
         pos = parseDecl(pos,&blockItemNode);
     }
@@ -559,48 +529,48 @@ Stmt → LVal '=' Exp ';' // 每种类型的语句都要覆盖
 | 'printf''('FormatString{','Exp}')'';'
  */
 int Parser::parseStmt(int pos, Node *tmpNode) {
-    Node stmtNode = Node(tmpNode,GrammarType::Stmt);
+    Node stmtNode = Node(tmpNode,GrammarType::Stmt,pos);
     if(tokens[pos].getValue() == "if" || tokens[pos].getValue() == "while") {//if
-        stmtNode.addLeaf(tokens[pos]);pos++; //if
-        stmtNode.addLeaf(tokens[pos]);pos++; //'('
+        stmtNode.addLeaf(tokens[pos],pos);pos++; //if
+        stmtNode.addLeaf(tokens[pos],pos);pos++; //'('
 
         pos = parseCond(pos,&stmtNode);
         if (tokens[pos].getValue() == ")") {
-            stmtNode.addLeaf(tokens[pos]);pos++;//)
+            stmtNode.addLeaf(tokens[pos],pos);pos++;//)
         }
 
         pos = parseStmt(pos,&stmtNode);
         if (tokens[pos].getValue() == "else") {
-            stmtNode.addLeaf(tokens[pos]);
+            stmtNode.addLeaf(tokens[pos],pos);
             pos++;
             pos = parseStmt(pos,&stmtNode);
         }
     }
     else if(tokens[pos].getValue() == "for") {//for
-        stmtNode.addLeaf(tokens[pos]);pos++;
-        stmtNode.addLeaf(tokens[pos]);pos++;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;
         if (tokens[pos].getValue() != ";") {
             pos = parseForStmt(pos,&stmtNode);
         }
-        stmtNode.addLeaf(tokens[pos]);pos++;//;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//;
         if (tokens[pos].getValue() != ";") {
             pos = parseCond(pos,&stmtNode);
         }
-        stmtNode.addLeaf(tokens[pos]);pos++;//;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//;
         if (tokens[pos].getValue() != ")") {
             pos = parseForStmt(pos,&stmtNode);
         }
-        stmtNode.addLeaf(tokens[pos]);pos++;//)
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//)
         pos = parseStmt(pos,&stmtNode);
     }
     else if (tokens[pos].getValue() == "break" || tokens[pos].getValue() == "continue") {//continue or break
-        stmtNode.addLeaf(tokens[pos]);pos++;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;
         if (tokens[pos].getValue() == ";"){
-            stmtNode.addLeaf(tokens[pos]);pos++;
+            stmtNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     else if (tokens[pos].getValue() == "return") { //return
-        stmtNode.addLeaf(tokens[pos]);pos++;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;
         if (tokens[pos].getType() == TokenType::PLUS ||
             tokens[pos].getType() == TokenType::MINU ||
             tokens[pos].getType() == TokenType::NOT ||
@@ -610,56 +580,56 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
             pos = parseExp(pos,&stmtNode);
         }
         if (tokens[pos].getValue() == ";") {
-            stmtNode.addLeaf(tokens[pos]);pos++;
+            stmtNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     else if (tokens[pos].getValue() == "printf") { //print
-        stmtNode.addLeaf(tokens[pos]);pos++;//printf
-        stmtNode.addLeaf(tokens[pos]);pos++;//(
-        stmtNode.addLeaf(tokens[pos]);pos++;//formatString
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//printf
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//(
+        stmtNode.addLeaf(tokens[pos],pos);pos++;//formatString
         while(tokens[pos].getValue() == ",") {
-            stmtNode.addLeaf(tokens[pos]);pos++;
+            stmtNode.addLeaf(tokens[pos],pos);pos++;
             pos = parseExp(pos,&stmtNode);
         }
         if (tokens[pos].getValue() == ")") {
-            stmtNode.addLeaf(tokens[pos]);pos++;//)
+            stmtNode.addLeaf(tokens[pos],pos);pos++;//)
         }
         if (tokens[pos].getValue() == ";") {
-            stmtNode.addLeaf(tokens[pos]);pos++;
+            stmtNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     else if (tokens[pos].getValue() == "{") { //block
         pos = parseBlock(pos,&stmtNode);
     }
     else if (tokens[pos].getValue() == ";") {
-        stmtNode.addLeaf(tokens[pos]);pos++;
+        stmtNode.addLeaf(tokens[pos],pos);pos++;
     }
     else if (tokens[pos].getValue() == "(" || tokens[pos].getType() == TokenType::INTCON
     || (tokens[pos].getType() == TokenType::IDENFR && tokens[pos + 1].getValue() == "(")
     || (tokens[pos].getValue() == "!" || tokens[pos].getValue() == "+" || tokens[pos].getValue() == "-")) {//exp
         pos = parseExp(pos,&stmtNode);
         if (tokens[pos].getValue() == ";") {
-            stmtNode.addLeaf(tokens[pos]);pos++;
+            stmtNode.addLeaf(tokens[pos],pos);pos++;
         }
     }
     else {
         if (tokens[pos + 1].getValue() == "=") {
             pos = parseLVal(pos,&stmtNode); //LVal
-            stmtNode.addLeaf(tokens[pos]);pos++;//=
+            stmtNode.addLeaf(tokens[pos],pos);pos++;//=
             if (tokens[pos].getType() == TokenType::GETINTTK) {
-                stmtNode.addLeaf(tokens[pos]);pos++;//getint
-                stmtNode.addLeaf(tokens[pos]);pos++;//(
+                stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
+                stmtNode.addLeaf(tokens[pos],pos);pos++;//(
                 if (tokens[pos].getValue() == ")") {
-                    stmtNode.addLeaf(tokens[pos]);pos++;//)
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;//)
                 }
                 if (tokens[pos].getValue() == ";") {//;
-                    stmtNode.addLeaf(tokens[pos]);pos++;
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;
                 }
             }
             else {
                 pos = parseExp(pos,&stmtNode);
                 if (tokens[pos].getValue() == ";") {
-                    stmtNode.addLeaf(tokens[pos]);pos++;
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;
                 }
             }
         }
@@ -671,21 +641,21 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
             if (tokens[tmpPos].getValue() == "=") {
                 /*do LVal*/
                 pos = parseLVal(pos,&stmtNode); //LVal
-                stmtNode.addLeaf(tokens[pos]);pos++;//=
+                stmtNode.addLeaf(tokens[pos],pos);pos++;//=
                 if (tokens[pos].getType() == TokenType::GETINTTK) {
-                    stmtNode.addLeaf(tokens[pos]);pos++;//getint
-                    stmtNode.addLeaf(tokens[pos]);pos++;//(
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;//(
                     if (tokens[pos].getValue() == ")") {
-                        stmtNode.addLeaf(tokens[pos]);pos++;//)
+                        stmtNode.addLeaf(tokens[pos],pos);pos++;//)
                     }
                     if (tokens[pos].getValue() == ";") {//;
-                        stmtNode.addLeaf(tokens[pos]);pos++;
+                        stmtNode.addLeaf(tokens[pos],pos);pos++;
                     }
                 }
                 else {
                     pos = parseExp(pos,&stmtNode);
                     if (tokens[pos].getValue() == ";") {//;
-                        stmtNode.addLeaf(tokens[pos]);pos++;
+                        stmtNode.addLeaf(tokens[pos],pos);pos++;
                     }
                 }
             }
@@ -693,7 +663,7 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
                 /*do Exp*/
                 pos = parseExp(pos,&stmtNode);
                 if (tokens[pos].getValue() == ";") {
-                    stmtNode.addLeaf(tokens[pos]);pos++;
+                    stmtNode.addLeaf(tokens[pos],pos);pos++;
                 }
             }
         }
@@ -705,7 +675,7 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
 
 /*Cond → LOrExp */
 int Parser::parseCond(int pos, Node *tmpNode) {
-    Node condNode = Node(tmpNode,GrammarType::Cond);
+    Node condNode = Node(tmpNode,GrammarType::Cond,pos);
     pos = parseLOrExp(pos,&condNode);
     tmpNode->addChild(condNode);
     return pos;
@@ -713,9 +683,9 @@ int Parser::parseCond(int pos, Node *tmpNode) {
 
 /* ForStmt → LVal '=' Exp*/
 int Parser::parseForStmt(int pos, Node *tmpNode) {
-    Node forStmtNode = Node(tmpNode,GrammarType::ForStmt);
+    Node forStmtNode = Node(tmpNode,GrammarType::ForStmt,pos);
     pos = parseLVal(pos,&forStmtNode);
-    forStmtNode.addLeaf(tokens[pos]);pos++;
+    forStmtNode.addLeaf(tokens[pos],pos);pos++;
     pos = parseExp(pos,&forStmtNode);
     tmpNode->addChild(forStmtNode);
     return pos;
@@ -723,15 +693,15 @@ int Parser::parseForStmt(int pos, Node *tmpNode) {
 
 /*BType → 'int'*/
 int Parser::parseBType(int pos, Node *tmpNode) {
-    Node bTypeNode = Node(tmpNode,GrammarType::BType);
-    bTypeNode.addLeaf(tokens[pos]);pos++;//加入int
+    Node bTypeNode = Node(tmpNode,GrammarType::BType,pos);
+    bTypeNode.addLeaf(tokens[pos],pos);pos++;//加入int
     tmpNode->addChild(bTypeNode);//加入到父节点之中
     return pos;
 }
 
 /*CompUnit → {Decl} {FuncDef} MainFuncDef*/
 Node Parser::parse() {
-    Node node = Node(nullptr,GrammarType::CompUnit);
+    Node node = Node(nullptr,GrammarType::CompUnit,0);
     lexer.run();
     this->tokens = this->lexer.getTokens();
     int pos = 0;
@@ -748,3 +718,4 @@ Node Parser::parse() {
     this->root = node;
     return node;
 }
+
