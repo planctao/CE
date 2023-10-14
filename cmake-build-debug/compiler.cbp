@@ -24,6 +24,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Error"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Symbol"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Util"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -45,6 +49,10 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Error"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Symbol"/>
+					<Add directory="D:/aaaaaaaaaaaa/CE/compiler/Util"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
 					<Add directory="D:/aaaaaaaaaaaa/CE/env/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
@@ -80,19 +88,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error.cpp">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error/Error.cpp">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error/Error.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/ErrorToken.cpp">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error/ErrorToken.cpp">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/ErrorToken.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Error/ErrorToken.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/GrammarType.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Node.cpp">
+			<Option target="compiler"/>
+		</Unit>
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Node.h">
+			<Option target="compiler"/>
+		</Unit>
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Token.cpp">
+			<Option target="compiler"/>
+		</Unit>
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Token.h">
 			<Option target="compiler"/>
 		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Lexer.cpp">
@@ -101,46 +118,31 @@
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Lexer.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Node.cpp">
-			<Option target="compiler"/>
-		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Node.h">
-			<Option target="compiler"/>
-		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Parser.cpp">
 			<Option target="compiler"/>
 		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Parser.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol.cpp">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol/Symbol.cpp">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol/Symbol.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/SymbolTable.cpp">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol/SymbolTable.cpp">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/SymbolTable.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Symbol/SymbolTable.h">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Token.cpp">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Util/utils.cpp">
 			<Option target="compiler"/>
 		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Token.h">
-			<Option target="compiler"/>
-		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/TokenType.h">
+		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/Util/utils.h">
 			<Option target="compiler"/>
 		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/main.cpp">
-			<Option target="compiler"/>
-		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/utils.cpp">
-			<Option target="compiler"/>
-		</Unit>
-		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/utils.h">
 			<Option target="compiler"/>
 		</Unit>
 		<Unit filename="D:/aaaaaaaaaaaa/CE/compiler/CMakeLists.txt">

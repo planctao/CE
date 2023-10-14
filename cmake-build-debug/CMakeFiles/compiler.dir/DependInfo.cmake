@@ -4,21 +4,25 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/aaaaaaaaaaaa/CE/compiler/Error.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Error.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/ErrorToken.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/ErrorToken.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/Error/Error.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Error/Error.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/Error/ErrorToken.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Node.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/GrammarTree/Token.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/GrammarTree/Token.cpp.obj"
   "D:/aaaaaaaaaaaa/CE/compiler/Lexer.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Lexer.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/Node.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Node.cpp.obj"
   "D:/aaaaaaaaaaaa/CE/compiler/Parser.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Parser.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/Symbol.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Symbol.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/SymbolTable.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/SymbolTable.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/Token.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Token.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/Symbol/Symbol.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Symbol/Symbol.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/Symbol/SymbolTable.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj"
+  "D:/aaaaaaaaaaaa/CE/compiler/Util/utils.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/Util/utils.cpp.obj"
   "D:/aaaaaaaaaaaa/CE/compiler/main.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/main.cpp.obj"
-  "D:/aaaaaaaaaaaa/CE/compiler/utils.cpp" "D:/aaaaaaaaaaaa/CE/compiler/cmake-build-debug/CMakeFiles/compiler.dir/utils.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../Error"
+  "../GrammarTree"
+  "../Symbol"
+  "../Util"
   )
 
 # Targets to which this target links.

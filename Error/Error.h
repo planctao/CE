@@ -4,9 +4,9 @@
 
 #ifndef COMPILER_ERROR_H
 #define COMPILER_ERROR_H
-#include"Node.h"
+#include"../GrammarTree/Node.h"
 #include"ErrorToken.h"
-#include "GrammarType.h"
+#include "../Util/GrammarType.h"
 class Error {
 private:
     Node root;

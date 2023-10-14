@@ -1,7 +1,7 @@
 #include <iostream>
 #include"Lexer.h"
 #include"Parser.h"
-#include"Error.h"
+#include"Error/Error.h"
 #include<vector>
 //#define MAINDEBUG 1
 //#define TEST 1
@@ -43,6 +43,7 @@ void fineError() {
 
 int main(int argc, char* argv[]) {
     const char* input_path = "testfile.txt";
+
 #ifdef TEST
     fineError();
 #else

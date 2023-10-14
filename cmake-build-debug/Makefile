@@ -122,59 +122,113 @@ compiler/fast:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/build
 .PHONY : compiler/fast
 
-Error.obj: Error.cpp.obj
+Error/Error.obj: Error/Error.cpp.obj
 
-.PHONY : Error.obj
-
-# target to build an object file
-Error.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.obj
-.PHONY : Error.cpp.obj
-
-Error.i: Error.cpp.i
-
-.PHONY : Error.i
-
-# target to preprocess a source file
-Error.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.i
-.PHONY : Error.cpp.i
-
-Error.s: Error.cpp.s
-
-.PHONY : Error.s
-
-# target to generate assembly for a file
-Error.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error.cpp.s
-.PHONY : Error.cpp.s
-
-ErrorToken.obj: ErrorToken.cpp.obj
-
-.PHONY : ErrorToken.obj
+.PHONY : Error/Error.obj
 
 # target to build an object file
-ErrorToken.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.obj
-.PHONY : ErrorToken.cpp.obj
+Error/Error.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/Error.cpp.obj
+.PHONY : Error/Error.cpp.obj
 
-ErrorToken.i: ErrorToken.cpp.i
+Error/Error.i: Error/Error.cpp.i
 
-.PHONY : ErrorToken.i
+.PHONY : Error/Error.i
 
 # target to preprocess a source file
-ErrorToken.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.i
-.PHONY : ErrorToken.cpp.i
+Error/Error.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/Error.cpp.i
+.PHONY : Error/Error.cpp.i
 
-ErrorToken.s: ErrorToken.cpp.s
+Error/Error.s: Error/Error.cpp.s
 
-.PHONY : ErrorToken.s
+.PHONY : Error/Error.s
 
 # target to generate assembly for a file
-ErrorToken.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/ErrorToken.cpp.s
-.PHONY : ErrorToken.cpp.s
+Error/Error.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/Error.cpp.s
+.PHONY : Error/Error.cpp.s
+
+Error/ErrorToken.obj: Error/ErrorToken.cpp.obj
+
+.PHONY : Error/ErrorToken.obj
+
+# target to build an object file
+Error/ErrorToken.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj
+.PHONY : Error/ErrorToken.cpp.obj
+
+Error/ErrorToken.i: Error/ErrorToken.cpp.i
+
+.PHONY : Error/ErrorToken.i
+
+# target to preprocess a source file
+Error/ErrorToken.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/ErrorToken.cpp.i
+.PHONY : Error/ErrorToken.cpp.i
+
+Error/ErrorToken.s: Error/ErrorToken.cpp.s
+
+.PHONY : Error/ErrorToken.s
+
+# target to generate assembly for a file
+Error/ErrorToken.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Error/ErrorToken.cpp.s
+.PHONY : Error/ErrorToken.cpp.s
+
+GrammarTree/Node.obj: GrammarTree/Node.cpp.obj
+
+.PHONY : GrammarTree/Node.obj
+
+# target to build an object file
+GrammarTree/Node.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj
+.PHONY : GrammarTree/Node.cpp.obj
+
+GrammarTree/Node.i: GrammarTree/Node.cpp.i
+
+.PHONY : GrammarTree/Node.i
+
+# target to preprocess a source file
+GrammarTree/Node.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Node.cpp.i
+.PHONY : GrammarTree/Node.cpp.i
+
+GrammarTree/Node.s: GrammarTree/Node.cpp.s
+
+.PHONY : GrammarTree/Node.s
+
+# target to generate assembly for a file
+GrammarTree/Node.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Node.cpp.s
+.PHONY : GrammarTree/Node.cpp.s
+
+GrammarTree/Token.obj: GrammarTree/Token.cpp.obj
+
+.PHONY : GrammarTree/Token.obj
+
+# target to build an object file
+GrammarTree/Token.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Token.cpp.obj
+.PHONY : GrammarTree/Token.cpp.obj
+
+GrammarTree/Token.i: GrammarTree/Token.cpp.i
+
+.PHONY : GrammarTree/Token.i
+
+# target to preprocess a source file
+GrammarTree/Token.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Token.cpp.i
+.PHONY : GrammarTree/Token.cpp.i
+
+GrammarTree/Token.s: GrammarTree/Token.cpp.s
+
+.PHONY : GrammarTree/Token.s
+
+# target to generate assembly for a file
+GrammarTree/Token.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Token.cpp.s
+.PHONY : GrammarTree/Token.cpp.s
 
 Lexer.obj: Lexer.cpp.obj
 
@@ -203,33 +257,6 @@ Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
-Node.obj: Node.cpp.obj
-
-.PHONY : Node.obj
-
-# target to build an object file
-Node.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Node.cpp.obj
-.PHONY : Node.cpp.obj
-
-Node.i: Node.cpp.i
-
-.PHONY : Node.i
-
-# target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Node.cpp.i
-.PHONY : Node.cpp.i
-
-Node.s: Node.cpp.s
-
-.PHONY : Node.s
-
-# target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Node.cpp.s
-.PHONY : Node.cpp.s
-
 Parser.obj: Parser.cpp.obj
 
 .PHONY : Parser.obj
@@ -257,86 +284,86 @@ Parser.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Parser.cpp.s
 .PHONY : Parser.cpp.s
 
-Symbol.obj: Symbol.cpp.obj
+Symbol/Symbol.obj: Symbol/Symbol.cpp.obj
 
-.PHONY : Symbol.obj
-
-# target to build an object file
-Symbol.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.obj
-.PHONY : Symbol.cpp.obj
-
-Symbol.i: Symbol.cpp.i
-
-.PHONY : Symbol.i
-
-# target to preprocess a source file
-Symbol.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.i
-.PHONY : Symbol.cpp.i
-
-Symbol.s: Symbol.cpp.s
-
-.PHONY : Symbol.s
-
-# target to generate assembly for a file
-Symbol.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol.cpp.s
-.PHONY : Symbol.cpp.s
-
-SymbolTable.obj: SymbolTable.cpp.obj
-
-.PHONY : SymbolTable.obj
+.PHONY : Symbol/Symbol.obj
 
 # target to build an object file
-SymbolTable.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.obj
-.PHONY : SymbolTable.cpp.obj
+Symbol/Symbol.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/Symbol.cpp.obj
+.PHONY : Symbol/Symbol.cpp.obj
 
-SymbolTable.i: SymbolTable.cpp.i
+Symbol/Symbol.i: Symbol/Symbol.cpp.i
 
-.PHONY : SymbolTable.i
+.PHONY : Symbol/Symbol.i
 
 # target to preprocess a source file
-SymbolTable.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.i
-.PHONY : SymbolTable.cpp.i
+Symbol/Symbol.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/Symbol.cpp.i
+.PHONY : Symbol/Symbol.cpp.i
 
-SymbolTable.s: SymbolTable.cpp.s
+Symbol/Symbol.s: Symbol/Symbol.cpp.s
 
-.PHONY : SymbolTable.s
+.PHONY : Symbol/Symbol.s
 
 # target to generate assembly for a file
-SymbolTable.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/SymbolTable.cpp.s
-.PHONY : SymbolTable.cpp.s
+Symbol/Symbol.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/Symbol.cpp.s
+.PHONY : Symbol/Symbol.cpp.s
 
-Token.obj: Token.cpp.obj
+Symbol/SymbolTable.obj: Symbol/SymbolTable.cpp.obj
 
-.PHONY : Token.obj
+.PHONY : Symbol/SymbolTable.obj
 
 # target to build an object file
-Token.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Token.cpp.obj
-.PHONY : Token.cpp.obj
+Symbol/SymbolTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj
+.PHONY : Symbol/SymbolTable.cpp.obj
 
-Token.i: Token.cpp.i
+Symbol/SymbolTable.i: Symbol/SymbolTable.cpp.i
 
-.PHONY : Token.i
+.PHONY : Symbol/SymbolTable.i
 
 # target to preprocess a source file
-Token.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Token.cpp.i
-.PHONY : Token.cpp.i
+Symbol/SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.i
+.PHONY : Symbol/SymbolTable.cpp.i
 
-Token.s: Token.cpp.s
+Symbol/SymbolTable.s: Symbol/SymbolTable.cpp.s
 
-.PHONY : Token.s
+.PHONY : Symbol/SymbolTable.s
 
 # target to generate assembly for a file
-Token.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Token.cpp.s
-.PHONY : Token.cpp.s
+Symbol/SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.s
+.PHONY : Symbol/SymbolTable.cpp.s
+
+Util/utils.obj: Util/utils.cpp.obj
+
+.PHONY : Util/utils.obj
+
+# target to build an object file
+Util/utils.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Util/utils.cpp.obj
+.PHONY : Util/utils.cpp.obj
+
+Util/utils.i: Util/utils.cpp.i
+
+.PHONY : Util/utils.i
+
+# target to preprocess a source file
+Util/utils.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Util/utils.cpp.i
+.PHONY : Util/utils.cpp.i
+
+Util/utils.s: Util/utils.cpp.s
+
+.PHONY : Util/utils.s
+
+# target to generate assembly for a file
+Util/utils.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Util/utils.cpp.s
+.PHONY : Util/utils.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -365,33 +392,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-utils.obj: utils.cpp.obj
-
-.PHONY : utils.obj
-
-# target to build an object file
-utils.cpp.obj:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/utils.cpp.obj
-.PHONY : utils.cpp.obj
-
-utils.i: utils.cpp.i
-
-.PHONY : utils.i
-
-# target to preprocess a source file
-utils.cpp.i:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/utils.cpp.i
-.PHONY : utils.cpp.i
-
-utils.s: utils.cpp.s
-
-.PHONY : utils.s
-
-# target to generate assembly for a file
-utils.cpp.s:
-	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/utils.cpp.s
-.PHONY : utils.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -401,36 +401,36 @@ help:
 	@echo ... compiler
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Error.obj
-	@echo ... Error.i
-	@echo ... Error.s
-	@echo ... ErrorToken.obj
-	@echo ... ErrorToken.i
-	@echo ... ErrorToken.s
+	@echo ... Error/Error.obj
+	@echo ... Error/Error.i
+	@echo ... Error/Error.s
+	@echo ... Error/ErrorToken.obj
+	@echo ... Error/ErrorToken.i
+	@echo ... Error/ErrorToken.s
+	@echo ... GrammarTree/Node.obj
+	@echo ... GrammarTree/Node.i
+	@echo ... GrammarTree/Node.s
+	@echo ... GrammarTree/Token.obj
+	@echo ... GrammarTree/Token.i
+	@echo ... GrammarTree/Token.s
 	@echo ... Lexer.obj
 	@echo ... Lexer.i
 	@echo ... Lexer.s
-	@echo ... Node.obj
-	@echo ... Node.i
-	@echo ... Node.s
 	@echo ... Parser.obj
 	@echo ... Parser.i
 	@echo ... Parser.s
-	@echo ... Symbol.obj
-	@echo ... Symbol.i
-	@echo ... Symbol.s
-	@echo ... SymbolTable.obj
-	@echo ... SymbolTable.i
-	@echo ... SymbolTable.s
-	@echo ... Token.obj
-	@echo ... Token.i
-	@echo ... Token.s
+	@echo ... Symbol/Symbol.obj
+	@echo ... Symbol/Symbol.i
+	@echo ... Symbol/Symbol.s
+	@echo ... Symbol/SymbolTable.obj
+	@echo ... Symbol/SymbolTable.i
+	@echo ... Symbol/SymbolTable.s
+	@echo ... Util/utils.obj
+	@echo ... Util/utils.i
+	@echo ... Util/utils.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... utils.obj
-	@echo ... utils.i
-	@echo ... utils.s
 .PHONY : help
 
 

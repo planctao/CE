@@ -13,6 +13,7 @@ private:
     int pos;
 public:
     ErrorToken(char type,int line,int pos);
+    ErrorToken(char type,int line);
 };
 
 

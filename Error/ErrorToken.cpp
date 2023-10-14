@@ -8,3 +8,9 @@ ErrorToken::ErrorToken(char type, int line, int pos) {
     this->pos = pos;
     this->line = line;
 }
+
+ErrorToken::ErrorToken(char type,int line) {
+    this->type = type;
+    this->line = line;
+    this->pos = -1; //no mean
+}

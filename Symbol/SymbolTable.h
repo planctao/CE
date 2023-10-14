@@ -13,7 +13,10 @@ private:
     std::map<std::string,Symbol> directory;
 public:
     SymbolTable(int id,int parentId);
+    SymbolTable() = default;
     void addSymbol(Symbol symbol);
+    int getId();
+    int getParentId();
     std::map<std::string,Symbol> getDirectory();
 };
 

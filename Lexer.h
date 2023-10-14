@@ -10,9 +10,9 @@
 #include<iostream>
 #include<vector>
 #include<map>
-#include"Token.h"
-#include"TokenType.h"
-#include"utils.h"
+#include"GrammarTree/Token.h"
+#include"Util/TokenType.h"
+#include"Util/utils.h"
 class Lexer {
 public:
     explicit Lexer(const char* path);

@@ -11,9 +11,9 @@
 #include<fstream>
 #include<string>
 #include"Lexer.h"
-#include"Token.h"
-#include"Node.h"
-#include"SymbolTable.h"
+#include"GrammarTree/Token.h"
+#include"GrammarTree/Node.h"
+#include"Symbol/SymbolTable.h"
 //#define DEBUG 1
 //#define FUNC_DEBUG 1
 //#define MAIN_DEBUG 1
