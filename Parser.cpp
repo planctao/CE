@@ -420,17 +420,15 @@ int Parser::parseFuncDef(int pos, Node* tmpNode) {
     pos = parseFuncType(pos,&funcDefNode);
     funcDefNode.addLeaf(tokens[pos],pos);pos++;
     funcDefNode.addLeaf(tokens[pos],pos);pos++;
-    if (tokens[pos].getType() == TokenType::PLUS ||
-        tokens[pos].getType() == TokenType::MINU ||
-        tokens[pos].getType() == TokenType::NOT ||
-        tokens[pos].getType() == TokenType::IDENFR ||
-        tokens[pos].getType() == TokenType::LPARENT ||
-        tokens[pos].getType() == TokenType::INTCON) {
+    std::cout << pos << '\n';
+    std::cout << tokens[pos].getTokenName() << '\n';
+    if (tokens[pos].getTokenType() == TokenType::INTTK) {
         pos = parseFuncFParams(pos,&funcDefNode);//FuncFParams
     }
     if (tokens[pos].getTokenName() == ")") {
         funcDefNode.addLeaf(tokens[pos],pos);pos++;//)
     }
+    std::cout << "pos == " << pos <<'\n';
     pos = parseBlock(pos,&funcDefNode);
     tmpNode->addChild(funcDefNode);
     return pos;

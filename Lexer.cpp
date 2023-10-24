@@ -30,7 +30,6 @@ Lexer::Lexer(std::string path) {
     this->inputs.append(str);
     //this->cursor = 0;
     this->line = 0;
-    this->wordValueList = {""};
 }
 
 std::string Lexer::getInputs() {
@@ -208,7 +207,7 @@ void Lexer::output() {
     fout.open("output.txt");
     for (auto& tmpToken: this->tokens) {
         //std::cout << tmpToken.formatOutput() << std::endl;
-        fout << tmpToken.formatOutput() << std::endl;
+        fout << tmpToken.formatOutput() << " " << tmpToken.getLine() << std::endl;
     }
     fout.close();
 }

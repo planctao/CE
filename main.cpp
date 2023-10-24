@@ -4,7 +4,11 @@
 #include"Error/Error.h"
 #include<vector>
 //#define MAINDEBUG 1
-//#define TEST 1
+#define MODE 0
+#define TEST 1
+#define LEXER 2
+#define PARSER 3
+#define ERROR 4
 void fineError() {
     std::string folderPath("D:\\aaaaaaaaaaaa\\CE\\test\\20221105191751099\\full\\A");
 
@@ -43,14 +47,59 @@ void fineError() {
 
 int main(int argc, char* argv[]) {
     const char* input_path = "testfile.txt";
+    int mode = ERROR;
+    switch(mode) {
+        case TEST: {
+            fineError();
+            break;
+        }
 
-#ifdef TEST
-    fineError();
-#else
-    Parser parser(input_path);
-    Node tmpNode = parser.parse();
-    Error error(std::move(tmpNode));
-    error.check();
-#endif
+
+        case LEXER: {
+            Lexer lexer(input_path);
+            lexer.run();
+            lexer.output();
+            break;
+        }
+
+
+        case PARSER: {
+            Parser parser(input_path);
+            Node tmpNode = parser.parse();
+            tmpNode.output();
+            break;
+        }
+
+
+        case ERROR: {
+            Parser parser(input_path);
+            Node tmpNode = parser.parse();
+            Error error(std::move(tmpNode));
+            error.check();
+            error.output();
+            break;
+        }
+
+
+        default:
+            break;
+    }
+//#ifdef TEST
+//    fineError();
+//#else
+//    std::cout << "start" << '\n';
+//    Parser parser(input_path);
+//    Node tmpNode = parser.parse();
+//    Error error(std::move(tmpNode));
+//    error.check();
+//    error.output();
+//
+//
+//    Lexer lexer(input_path);
+//    lexer.run();
+//    lexer.output();
+//
+//    Parser parser(intput_path);
+//    Node tmpNode = parser.parse();
     return 0;
 }

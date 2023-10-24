@@ -45,3 +45,7 @@ int Token::getLine() {
     return this->line;
 }
 
+TokenType Token::getTokenType() {
+    return this->type;
+}
+

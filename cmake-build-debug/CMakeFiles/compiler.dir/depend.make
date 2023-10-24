@@ -10,6 +10,7 @@ CMakeFiles/compiler.dir/Error/Error.cpp.obj: ../Symbol/Symbol.h
 CMakeFiles/compiler.dir/Error/Error.cpp.obj: ../Symbol/SymbolTable.h
 CMakeFiles/compiler.dir/Error/Error.cpp.obj: ../Util/GrammarType.h
 CMakeFiles/compiler.dir/Error/Error.cpp.obj: ../Util/TokenType.h
+CMakeFiles/compiler.dir/Error/Error.cpp.obj: ../Util/utils.h
 
 CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj: ../Error/ErrorToken.cpp
 CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj: ../Error/ErrorToken.h
@@ -22,6 +23,7 @@ CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj: ../Symbol/Symbol.h
 CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj: ../Symbol/SymbolTable.h
 CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj: ../Util/GrammarType.h
 CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj: ../Util/TokenType.h
+CMakeFiles/compiler.dir/GrammarTree/Node.cpp.obj: ../Util/utils.h
 
 CMakeFiles/compiler.dir/GrammarTree/Token.cpp.obj: ../GrammarTree/Token.cpp
 CMakeFiles/compiler.dir/GrammarTree/Token.cpp.obj: ../GrammarTree/Token.h
@@ -30,6 +32,7 @@ CMakeFiles/compiler.dir/GrammarTree/Token.cpp.obj: ../Util/TokenType.h
 CMakeFiles/compiler.dir/Lexer.cpp.obj: ../GrammarTree/Token.h
 CMakeFiles/compiler.dir/Lexer.cpp.obj: ../Lexer.cpp
 CMakeFiles/compiler.dir/Lexer.cpp.obj: ../Lexer.h
+CMakeFiles/compiler.dir/Lexer.cpp.obj: ../Util/GrammarType.h
 CMakeFiles/compiler.dir/Lexer.cpp.obj: ../Util/TokenType.h
 CMakeFiles/compiler.dir/Lexer.cpp.obj: ../Util/utils.h
 
@@ -53,6 +56,7 @@ CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj: ../Symbol/SymbolTable.cpp
 CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj: ../Symbol/SymbolTable.h
 
 CMakeFiles/compiler.dir/Util/utils.cpp.obj: ../GrammarTree/Token.h
+CMakeFiles/compiler.dir/Util/utils.cpp.obj: ../Util/GrammarType.h
 CMakeFiles/compiler.dir/Util/utils.cpp.obj: ../Util/TokenType.h
 CMakeFiles/compiler.dir/Util/utils.cpp.obj: ../Util/utils.cpp
 CMakeFiles/compiler.dir/Util/utils.cpp.obj: ../Util/utils.h

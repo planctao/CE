@@ -84,6 +84,10 @@ TokenType string2TokenType(std::string str) {
     return TokenType::UNKNOWED;
 }
 
+std::string GrammarType2String(GrammarType gt) {
+    return grammarStrings[static_cast<int>(gt)];
+}
+
 
 
 

@@ -8,11 +8,19 @@
 #include<iostream>
 #include<map>
 #include <utility>
+#include<algorithm>
+#include<fstream>
 #include"Token.h"
 #include"../Util/GrammarType.h"
 #include"../Symbol/SymbolTable.h"
 #include"../Symbol/Symbol.h"
 #include"../Error/ErrorToken.h"
+#include"../Util/utils.h"
+#define GLOBAL -1
+#define MAIN_FUNC 0
+#define INT_FUNC 1
+#define VOID_FUNC 2
+#define NODE_DEBUG 1
 class Node {
 private:
     int pos;
@@ -23,6 +31,8 @@ private:
     static std::vector<ErrorToken> errorList;
     static std::map<int, SymbolTable> symbolTableList;
     static int tableIdTop;
+    static int scopeType;
+    static int loopTime;
 public:
     void addChild(const Node& childNode);
     void addLeaf(Token token,int pos);
@@ -30,15 +40,17 @@ public:
     Node(Node *parent,Token leafToken,int pos);
     Node *getParent();
     void setParent(Node* parent);
-    std::vector<Node> getChildren();
+    std::vector<Node>getChildren();
     bool isLeaf();
     Token getToken();
     std::string getLeafTokenName();
+    TokenType getLeafTokenType();
     int getPos();
     int getLine();
     void output();
     void fileWrite(std::vector<std::string>& a);
     GrammarType getGrammarType();
+    static bool findIdent(std::string identName, int curScope,bool isVar);
     void buildSymbolTable(int curScope,int preScope);
 
     void buildConstDecl(int curScope,int preScope);
@@ -51,12 +63,26 @@ public:
     void buildMainFuncDef(int curScope,int preScope);
     void buildFuncFParams(int curScope,int preScope);
     void buildFuncFParam(int curScope,int preScope);
-    void buildConstExp(int curScope,int preScope);
-    void buildExp(int curScope,int preScope);
-    void buildBlock(int curScope,int preScope,bool newTable);
+    std::vector<int> buildConstExp(int curScope,int preScope);
+    std::vector<int> buildExp(int curScope,int preScope);
+    void buildBlock(int curScope,int preScope);
     void buildBlockItem(int curScope,int preScope);
     void buildDecl(int curScope,int preScope);
     void buildStmt(int curScope,int preScope);
+    std::vector<int> buildLVal(int curScope,int preScope);
+    void buildForStmt(int curScope,int preScope);
+    void buildCond(int curScope,int preScope);
+    std::vector<int> buildAddExp(int curScope,int preScope);
+    std::vector<int> buildLOrExp(int curScope,int preScope);
+    std::vector<int> buildLAndExp(int curScope,int preScope);
+    std::vector<int> buildEqExp(int curScope,int preScope);
+    std::vector<int> buildRelExp(int curScope,int preScope);
+    std::vector<int> buildUnaryExp(int curScope,int preScope);
+    std::vector<int> buildFuncRParams(int curScope,int preScope);
+    std::vector<int> buildPrimaryExp(int curScope,int preScope);
+    std::vector<int> buildMulExp(int curScope,int preScope);
+
+    void error_output();
 };
 
 

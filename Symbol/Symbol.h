@@ -31,6 +31,11 @@ public:
     Symbol(int id,int tableId,std::string tokenValue,int type, int kind);
     Symbol(int id,int tableId,std::string tokenName,int type, int returnType,int paramNum,std::vector<int> paraTypes);
     std::string getTokenValue();
+    int getKind();
+    int getSymbolType();
+    int getReturnType();
+    int getParaNum();
+    std::vector<int> getParaTypes();
 };
 
 

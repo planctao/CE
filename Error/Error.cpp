@@ -9,18 +9,11 @@ Error::Error(Node node) : root{std::move(node)}{
 }
 
 void Error::check() {
-    for(Node tmpNode : this->root.getChildren()) {
-        if(tmpNode.getGrammarType() == GrammarType::ConstDecl) {
-            if (tmpNode.getChildren().rbegin()->getToken().getTokenName() != ";") {
-
-            }
-        }
-    }
-
+    this->root.buildSymbolTable(0,-1);
 }
 
 void Error::output() {
-
+    this->root.error_output();
 }
 
 

@@ -5,7 +5,7 @@
 #ifndef COMPILER_ERRORTOKEN_H
 #define COMPILER_ERRORTOKEN_H
 
-
+#include<string>
 class ErrorToken {
 private:
     int line;
@@ -14,6 +14,9 @@ private:
 public:
     ErrorToken(char type,int line,int pos);
     ErrorToken(char type,int line);
+    int getErrorTokenLine();
+    char getErrorTokenType();
+    std::string getOutputString();
 };
 
 

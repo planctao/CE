@@ -20,6 +20,7 @@ public:
     std::string formatOutput();
     std::string type2Str();
     std::string getTokenName();
+    TokenType getTokenType();
     TokenType getType();
     int getLine();
     void writeFile(std::vector<std::string>& a);
