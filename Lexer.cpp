@@ -63,7 +63,6 @@ int Lexer::handleCondSymbol(int nowCursor) {//条件运算符比如 == ！= >= <
     TokenType tmpType = string2TokenType(tmpValue);
     addToken(tmpType,tmpValue,this->line);
     Token tmpToken(tmpType,this->line,tmpValue);
-    //std::cout << "we meet condSymbol " << tmpValue << '\n';
     return trueCursor + 1;
 }
 

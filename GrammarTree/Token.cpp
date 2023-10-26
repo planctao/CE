@@ -9,10 +9,13 @@ Token::Token(TokenType type, int line, std::string value) {
     this->name = std::move(value);//采用move函数后value的值会为空串，相当于资源的转移
 }
 
-void Token::output() {
+std::string Token::output() {
+    std::string ret;
     int numType = static_cast<int>(type);
     std::string typeString = typeStrings[numType];
-    std::cout << typeString << " " << this->name << '\n';
+    ret = typeString + " " + this->name + "\n";
+    return ret;
+    //std::cout << typeString << " " << this->name << '\n';
 }
 
 void Token::writeFile(std::vector<std::string>& a) {

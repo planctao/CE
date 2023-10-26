@@ -66,7 +66,7 @@ int main(int argc, char* argv[]) {
         case PARSER: {
             Parser parser(input_path);
             Node tmpNode = parser.parse();
-            tmpNode.output();
+            parser.output();
             break;
         }
 

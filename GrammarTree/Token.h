@@ -16,7 +16,7 @@ private:
 
 public:
     Token(TokenType type, int line, std::string value);
-    void output();
+    std::string output();
     std::string formatOutput();
     std::string type2Str();
     std::string getTokenName();

@@ -36,6 +36,8 @@ private:
 public:
     void addChild(const Node& childNode);
     void addLeaf(Token token,int pos);
+    void addLeaf(Token token,int pos,int vector_pos);
+    void addLeaf(std::string conName,int line,int in_pos,int vector_pos);
     Node(Node *parent,GrammarType grammarType,int pos);
     Node(Node *parent,Token leafToken,int pos);
     Node *getParent();

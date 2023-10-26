@@ -38,9 +38,20 @@ void Node::addChild(const Node& childNode) {
     this->children.push_back(childNode);
 }
 
-void Node::addLeaf(Token token,int pos) {
-    Node tmpNode = Node(this,std::move(token),pos);
+void Node::addLeaf(Token token,int in_pos) {
+    Node tmpNode = Node(this,std::move(token),in_pos);
     this->children.push_back(tmpNode);
+}
+
+void Node::addLeaf(Token token,int in_pos,int vector_pos) {
+    Node tmpNode = Node(this,std::move(token),in_pos);
+    this->children.insert(this->children.begin() + vector_pos,tmpNode);
+}
+
+void Node::addLeaf(std::string conName,int line,int in_pos,int vector_pos) {
+    Token in_token(string2TokenType(conName),line,conName);
+    Node tmpNode = Node(this,std::move(in_token),in_pos);
+    this->children.insert(this->children.begin() + vector_pos,tmpNode);
 }
 
 bool Node::isLeaf() {
@@ -64,9 +75,11 @@ GrammarType Node::getGrammarType() {
 }
 
 void Node::output() {
+    std::string ans;
+    std::fstream fout("output.txt");
     for(Node tmpNode : this->children) {
         if(tmpNode.isLeaf()) {
-            tmpNode.getToken().output();
+            ans += tmpNode.getToken().output();
         }
         else {
             tmpNode.output();
@@ -74,7 +87,7 @@ void Node::output() {
     }
     std::string  grammarStr = grammarStrings[static_cast<int>(this->grammarType)];
     if (grammarStr != "BType" && grammarStr != "Decl" && grammarStr != "BlockItem" && grammarStr != "formatString") {
-        std::cout << "<" << grammarStr << ">" << '\n';
+        fout << "<" << grammarStr << ">" << '\n';
     }
 
 }
@@ -125,6 +138,7 @@ bool Node::findIdent(std::string identName, int curScope, bool isVar) {
     return false;
 }
 
+/*CompUnit → {Decl} {FuncDef} MainFuncDef*/
 void Node::buildSymbolTable(int curScope,int preScope) {
     SymbolTable tmpST(0,-1);
     Node::symbolTableList.insert(std::make_pair(0,tmpST));
@@ -141,6 +155,7 @@ void Node::buildSymbolTable(int curScope,int preScope) {
     }
 }
 
+/*Decl → ConstDecl | VarDecl*/
 void Node::buildDecl(int curScope, int preScope) {
     for (Node& tmpNode : this->children) {
         if (tmpNode.getGrammarType() == GrammarType::ConstDecl) {
@@ -152,6 +167,7 @@ void Node::buildDecl(int curScope, int preScope) {
     }
 }
 
+/*ConstDecl → 'const' BType ConstDef { ',' ConstDef } ';'*/
 void Node::buildConstDecl(int curScope, int preScope) {
     auto iter = this->children.rbegin();
     /*先找到错误*/
@@ -173,7 +189,6 @@ void Node::buildConstDecl(int curScope, int preScope) {
 
 //ConstDef → Ident { '[' ConstExp ']' } '=' ConstInitVal  error ==  b k
 void Node::buildConstDef(int curScope, int preScope) {
-    //std::cout << this->children.size() << '\n';
     bool flag_b = false,flag_k = false; //表示是否出现b或者k错误
     /*处理有括号 type == k*/
     if(this->children.size() > 1 && this->getChildren()[1].getLeafTokenName() == "[") {
@@ -188,6 +203,7 @@ void Node::buildConstDef(int curScope, int preScope) {
                 ErrorToken tmpErrorToken('k',tNode.getToken().getLine());
                 Node::errorList.emplace_back(tmpErrorToken);
                 flag_k = true;
+                start--;
             }
             start++;
         }
@@ -227,6 +243,11 @@ void Node::buildConstDef(int curScope, int preScope) {
         }
     }
     /*递归查询继续建表*/
+//    for (int i = 0;i < this->children.size() && this->children[i].getLeafTokenName() != "=";i++) {
+//        if (this->children[i].getGrammarType() == GrammarType::ConstExp) {
+//            this->children[i].buildConstExp(curScope,preScope);
+//        }
+//    }
     if (this->children.size() > 1 && this->getChildren()[1].getLeafTokenName() == "[") {
         int start = 1;
         while(start < this->getChildren().size() && this->getChildren()[start].getLeafTokenName() == "[") {
@@ -245,7 +266,6 @@ void Node::buildConstDef(int curScope, int preScope) {
 //    | '{' [ ConstInitVal { ',' ConstInitVal } ] '}'
 void Node::buildConstInitial(int curScope, int preScope) {
     for (Node& tmpNode : this->children) {
-        std::cout << GrammarType2String(tmpNode.getGrammarType()) << '\n';
         if (tmpNode.getGrammarType() == GrammarType::ConstExp) {
             tmpNode.buildConstExp(curScope,preScope);
         }
@@ -255,6 +275,7 @@ void Node::buildConstInitial(int curScope, int preScope) {
     }
 }
 
+/* VarDecl → BType VarDef { ',' VarDef } ';'*/
 void Node::buildVarDecl(int curScope, int preScope) {
     auto iter = this->children.rbegin();
     /*先找到错误*/
@@ -314,7 +335,6 @@ void Node::buildVarDef(int curScope, int preScope) {
                 dim++;
             }
         }
-        //std::cout << "ident == " << this->children[0].getLeafTokenName() << "  dim==" << dim << '\n';
         if (dim == 0) {
             Symbol tmpSb(this->children[0].getPos(),curScope,this->children[0].getLeafTokenName(),VARIABLE_TYPE,VAR_KIND);
             Node::symbolTableList[curScope].addSymbol(tmpSb);
@@ -359,7 +379,7 @@ void Node::buildFuncDef(int curScope, int preScope) {
         Node::scopeType = VOID_FUNC;
     }
     /*错误处理 重命名 type == b*/
-    std::string identName = this->children[1].getLeafTokenName();//std::cout << this->children[1].getLeafTokenName() << '\n';
+    std::string identName = this->children[1].getLeafTokenName();
     SymbolTable tmpST = Node::symbolTableList[curScope];
     for (const auto& tmpSymbol : tmpST.getDirectory()) {
         if (tmpSymbol.first == identName) {
@@ -412,9 +432,8 @@ void Node::buildFuncDef(int curScope, int preScope) {
         }
     }
 
-    /*将函数放入符号表中*/
+    /*将函数参数放入符号表中*/
     std::vector<int> params;
-    //std::cout << GrammarType2String(this->children[3].getGrammarType()) << '\n';
     if (this->children.size() > 3 && this->children[3].getGrammarType() == GrammarType::FuncFParams) {
         for (auto child : this->children[3].getChildren()) {
             if (child.getGrammarType() == GrammarType::FuncFParam) {
@@ -428,11 +447,10 @@ void Node::buildFuncDef(int curScope, int preScope) {
             }
         }
     }
-    int tmpReturn = this->children[0].getLeafTokenName() == "int" ? INT_FUNC : VOID_FUNC;
+    int tmpReturn = this->children[0].getChildren()[0].getLeafTokenName() == "int" ? INT_FUNC : VOID_FUNC;
     Symbol funcDefSymbol(this->children[1].getPos(),curScope,this->children[1].getLeafTokenName(),
             FUNC_TYPE,tmpReturn,params.size(),params);
     Node::symbolTableList[curScope].addSymbol(funcDefSymbol);
-
     /*建新的符号表*/
     SymbolTable newST(Node::tableIdTop,curScope);Node::tableIdTop++;
     Node::symbolTableList.insert(std::make_pair(newST.getId(),newST));
@@ -495,6 +513,7 @@ void Node::buildFuncFParams(int curScope, int preScope) {
     }
 }
 
+/*FuncFParam → BType Ident ['[' ']' { '[' ConstExp ']' }]*/
 void Node::buildFuncFParam(int curScope, int preScope) {
     /*错误处理 名字重定义 type==b*/
     bool flag_b = false, flag_k = false;
@@ -549,7 +568,6 @@ void Node::buildFuncFParam(int curScope, int preScope) {
             Symbol tmpSb(this->children[1].getPos(),curScope,identName,ARRAY_2_TYPE,VAR_KIND);
             Node::symbolTableList[curScope].addSymbol(tmpSb);
         }
-        //std::cout << "in funcFParam ident == " << identName << "  curScope == " << curScope << '\n';
     }
 
 
@@ -619,7 +637,7 @@ void Node::buildStmt(int curScope, int preScope) {
         this->children[0].getLeafTokenType() == TokenType::PRINTFTK) {
         auto iter = this->children.rbegin();
         if (iter->getLeafTokenName() != ";") {
-            Node tNode = *(iter+1);
+            Node tNode = *(iter);
             while(tNode.getGrammarType() != GrammarType::NullType) {
                 tNode = *(tNode.getChildren().rbegin());
             }
@@ -636,6 +654,7 @@ void Node::buildStmt(int curScope, int preScope) {
             }
             ErrorToken tmpErrorToken('j',tNode.getLine());
             Node::errorList.emplace_back(tmpErrorToken);
+            addLeaf(")",tNode.getLine(),-1,3);
         }
     }
     if (this->children[0].getGrammarType() == GrammarType::LVal) { //LVal = getint();
@@ -675,10 +694,8 @@ void Node::buildStmt(int curScope, int preScope) {
             Node::errorList.emplace_back(tmpErrorToken);
         }
     }
-
     /*错误处理 void的函数应该返回一个 return ; type == f*/
     if (this->children[0].getLeafTokenType() == TokenType::RETURNTK) {
-        //std::cout << "in return" << GrammarType2String(this->children.at(1).getGrammarType()) << '\n';
         if (Node::scopeType != MAIN_FUNC && Node::scopeType != INT_FUNC && this->children.size() > 1 && this->children.at(1).getGrammarType() == GrammarType::Exp) {
             ErrorToken tmpErrorToken('f',this->children[0].getLine());
             Node::errorList.emplace_back(tmpErrorToken);
@@ -778,32 +795,6 @@ void Node::buildStmt(int curScope, int preScope) {
         iter->buildStmt(curScope,preScope);
         Node::loopTime--;
     }
-    /*
-    for (auto& tmpChild : this->children) {
-        if (tmpChild.getGrammarType() == GrammarType::LVal) {
-            tmpChild.buildLVal(curScope,preScope);
-        }
-        else if (tmpChild.getGrammarType() == GrammarType::Exp) {
-            tmpChild.buildExp(curScope,preScope);
-        }
-        else if (tmpChild.getGrammarType() == GrammarType::Stmt) {
-            tmpChild.buildStmt(curScope,preScope);
-        }
-        else if (tmpChild.getGrammarType() == GrammarType::ForStmt) {
-            Node::loopTime++;
-            tmpChild.buildForStmt(curScope,preScope);
-            Node::loopTime--;
-        }
-        else if (tmpChild.getGrammarType() == GrammarType::Cond) {
-            tmpChild.buildCond(curScope,preScope);
-        }
-        else if (tmpChild.getGrammarType() == GrammarType::Block) {
-            SymbolTable newTable(Node::tableIdTop,curScope);
-            Node::tableIdTop++;
-            Node::symbolTableList.insert(std::make_pair(newTable.getId(),newTable));
-            tmpChild.buildBlock(newTable.getId(),curScope);
-        }
-    }*/
 }
 
 /* ForStmt → LVal '=' Exp*/
@@ -847,29 +838,13 @@ void Node::buildCond(int curScope, int preScope) {
 
 /*LVal → Ident {'[' Exp ']'}*/
 std::vector<int> Node::buildLVal(int curScope, int preScope) {
-    /*std::string identName = this->children[0].getLeafTokenName();
-    bool flag = false; //判断是否找到一个ident
-    int tableId = curScope;
-    while(tableId != -1) {
-        for (auto tmpSb : Node::symbolTableList[tableId].getDirectory()) {
-            if (tmpSb.second.getSymbolType() != FUNC_TYPE && tmpSb.second.getTokenValue() == identName) {
-                flag = true;
-                break;
-            }
-        }
-        if (flag) break;
-        tableId = Node::symbolTableList[tableId].getParentId();
-    }*/
     /*错误处理 未定义名字 type==c*/
     std::string identName = this->children[0].getLeafTokenName();
     bool flag = findIdent(identName,curScope,true);
-    //std::cout << "in LVal curScope == "  << curScope << "identName == " << identName << '\n';
     if (!flag) {
         ErrorToken tmpErrorToken('c',this->children[0].getLine());
         Node::errorList.emplace_back(tmpErrorToken);
     }
-
-
     /*错误处理 缺少中括号 type==k*/
     if (this->children.size() > 1 && this->children[1].getLeafTokenName() == "[") {
         int start = 1;
@@ -917,7 +892,6 @@ std::vector<int> Node::buildLVal(int curScope, int preScope) {
         }
     }
     std::vector<int> retDim;
-    //std::cout << "ident Name == " << this->children[0].getLeafTokenName() << "   defineType == " << defineType << "  useDim == " << useDim << '\n';
     retDim.emplace_back(defineType - useDim);
     return retDim;
 }
@@ -1013,7 +987,12 @@ std::vector<int> Node::buildUnaryExp(int curScope, int preScope) {
         for (auto child : Node::symbolTableList[0].getDirectory()) {
             if (child.second.getTokenValue() == this->children[0].getLeafTokenName() &&
                 child.second.getSymbolType() == FUNC_TYPE) {
-                retDim.emplace_back(child.second.getReturnType());
+                if (child.second.getReturnType() == INT_FUNC) {
+                    retDim.emplace_back(0);
+                }
+                else {
+                    retDim.emplace_back(-1);
+                }
             }
         }
     }
@@ -1026,22 +1005,19 @@ std::vector<int> Node::buildPrimaryExp(int curScope, int preScope) {
         return this->children[1].buildExp(curScope,preScope);
     }
     else if (this->children[0].getGrammarType() == GrammarType::LVal) {
-
         return this->children[0].buildLVal(curScope,preScope);
     }
     else {
-
         retDim.push_back(0);
     }
     return retDim;
 }
 
+/*FuncRParams → Exp { ',' Exp }*/
 std::vector<int> Node::buildFuncRParams(int curScope, int preScope) {
     std::vector<int> retDim;
-    int i = 0;
     for (auto &child : this->children) {
         if (child.getGrammarType() == GrammarType::Exp) {
-            i++;
             std::vector<int> expRet = child.buildExp(curScope,preScope);
             retDim.insert(retDim.end(),expRet.begin(),expRet.end());
         }

@@ -124,8 +124,7 @@ int Parser::parseMulExp(int pos, Node* tmpNode) {
         Node mulExpNode = Node(nullptr, GrammarType::MulExp, pos);
         mulExpNode.addChild(st.top());
         st.top().setParent(&mulExpNode);
-        mulExpNode.addLeaf(tokens[pos], pos);
-        pos++;
+        mulExpNode.addLeaf(tokens[pos], pos);pos++;
         pos = parseUnaryExp(pos, &mulExpNode);
         st.push(mulExpNode);
     }
@@ -146,8 +145,8 @@ int Parser::parseAddExp(int pos, Node* tmpNode) {
         Node addExpNode = Node(nullptr, GrammarType::AddExp, pos);
         addExpNode.addChild(st.top());
         st.top().setParent(&addExpNode);
-        addExpNode.addLeaf(tokens[pos], pos);
-        pos++;
+        addExpNode.addLeaf(tokens[pos], pos);pos++;
+
         pos = parseMulExp(pos, &addExpNode);
         st.push(addExpNode);
     }
@@ -369,14 +368,12 @@ int Parser::parseDecl(int pos, Node* tmpNode) {
 /*ConstDecl → 'const' BType ConstDef { ',' ConstDef } ';'*/
 int Parser::parseConstDecl(int pos, Node* tmpNode) {
     Node constDeclNode = Node(tmpNode,GrammarType::ConstDecl,pos);
-    constDeclNode.addLeaf(tokens[pos],pos);//加入const这个终结符
-    pos++;
+    constDeclNode.addLeaf(tokens[pos],pos);pos++;//加入const这个终结符
     pos = parseBType(pos,&constDeclNode);//parse BType
     while(true) {
         pos = parseConstDef(pos,&constDeclNode);
         if (tokens[pos].getTokenName() == ",") {
-            constDeclNode.addLeaf(tokens[pos],pos);
-            pos++;
+            constDeclNode.addLeaf(tokens[pos],pos);pos++;
         }
         else if (tokens[pos].getTokenName() == ";") {
             constDeclNode.addLeaf(tokens[pos],pos);pos++;
@@ -398,8 +395,7 @@ int Parser::parseVarDecl(int pos, Node* tmpNode) {
     pos = parseVarDef(pos,&varDeclNode);//VarDef
     while(true) {
         if (tokens[pos].getTokenName() == ",") {
-            varDeclNode.addLeaf(tokens[pos],pos);
-            pos++;
+            varDeclNode.addLeaf(tokens[pos],pos);pos++;
             pos = parseVarDef(pos,&varDeclNode);
         }
         else if (tokens[pos].getTokenName() == ";"){// ;
@@ -420,15 +416,12 @@ int Parser::parseFuncDef(int pos, Node* tmpNode) {
     pos = parseFuncType(pos,&funcDefNode);
     funcDefNode.addLeaf(tokens[pos],pos);pos++;
     funcDefNode.addLeaf(tokens[pos],pos);pos++;
-    std::cout << pos << '\n';
-    std::cout << tokens[pos].getTokenName() << '\n';
     if (tokens[pos].getTokenType() == TokenType::INTTK) {
         pos = parseFuncFParams(pos,&funcDefNode);//FuncFParams
     }
     if (tokens[pos].getTokenName() == ")") {
         funcDefNode.addLeaf(tokens[pos],pos);pos++;//)
     }
-    std::cout << "pos == " << pos <<'\n';
     pos = parseBlock(pos,&funcDefNode);
     tmpNode->addChild(funcDefNode);
     return pos;
@@ -611,10 +604,13 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
         }
     }
     else {
-        if (tokens[pos + 1].getTokenName() == "=") {
-            pos = parseLVal(pos,&stmtNode); //LVal
-            stmtNode.addLeaf(tokens[pos],pos);pos++;//=
-            if (tokens[pos].getType() == TokenType::GETINTTK) {
+        int tmpPos = 0;
+        Node noMeanNode(nullptr, GrammarType::NullType, -1);
+        tmpPos = parseLVal(pos, &noMeanNode);
+        if (tokens[tmpPos].getTokenName() == "=") {//LVal
+            pos = parseLVal(pos, &stmtNode); //LVal
+            stmtNode.addLeaf(tokens[pos],pos);pos++; // =
+            if (tokens[pos].getTokenType() == TokenType::GETINTTK) { //Lval = getint();
                 stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
                 stmtNode.addLeaf(tokens[pos],pos);pos++;//(
                 if (tokens[pos].getTokenName() == ")") {
@@ -624,48 +620,77 @@ int Parser::parseStmt(int pos, Node *tmpNode) {
                     stmtNode.addLeaf(tokens[pos],pos);pos++;
                 }
             }
-            else {
+            else { //LVal = EXP;
                 pos = parseExp(pos,&stmtNode);
-                if (tokens[pos].getTokenName() == ";") {
+                if (tokens[pos].getTokenName() == ";") {//;
                     stmtNode.addLeaf(tokens[pos],pos);pos++;
                 }
             }
         }
         else {
-            int tmpPos = pos;
-            while(tokens[tmpPos].getTokenName()!= "=" && tokens[tmpPos].getTokenName()!= ";") {
-                tmpPos++;
-            }
-            if (tokens[tmpPos].getTokenName() == "=") {
-                /*do LVal*/
-                pos = parseLVal(pos,&stmtNode); //LVal
-                stmtNode.addLeaf(tokens[pos],pos);pos++;//=
-                if (tokens[pos].getType() == TokenType::GETINTTK) {
-                    stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
-                    stmtNode.addLeaf(tokens[pos],pos);pos++;//(
-                    if (tokens[pos].getTokenName() == ")") {
-                        stmtNode.addLeaf(tokens[pos],pos);pos++;//)
-                    }
-                    if (tokens[pos].getTokenName() == ";") {//;
-                        stmtNode.addLeaf(tokens[pos],pos);pos++;
-                    }
-                }
-                else {
-                    pos = parseExp(pos,&stmtNode);
-                    if (tokens[pos].getTokenName() == ";") {//;
-                        stmtNode.addLeaf(tokens[pos],pos);pos++;
-                    }
-                }
-            }
-            else {
-                /*do Exp*/
-                pos = parseExp(pos,&stmtNode);
-                if (tokens[pos].getTokenName() == ";") {
-                    stmtNode.addLeaf(tokens[pos],pos);pos++;
-                }
+            pos = parseExp(pos,&stmtNode);
+            if (tokens[pos].getTokenName() == ";") {//;
+                stmtNode.addLeaf(tokens[pos],pos);pos++;
             }
         }
     }
+
+//    else {
+//        if (tokens[pos + 1].getTokenName() == "=") {
+//            pos = parseLVal(pos,&stmtNode); //LVal
+//            stmtNode.addLeaf(tokens[pos],pos);pos++;//=
+//            if (tokens[pos].getType() == TokenType::GETINTTK) {
+//                stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
+//                stmtNode.addLeaf(tokens[pos],pos);pos++;//(
+//                if (tokens[pos].getTokenName() == ")") {
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;//)
+//                }
+//                if (tokens[pos].getTokenName() == ";") {//;
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;
+//                }
+//            }
+//            else {
+//                pos = parseExp(pos,&stmtNode);
+//                if (tokens[pos].getTokenName() == ";") {
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;
+//                }
+//            }
+//        }
+//        else {
+//            int tmpPos = pos;
+//            while(tokens[tmpPos].getTokenName()!= "=" && tokens[tmpPos].getTokenName()!= ";") {
+//                tmpPos++;
+//            }
+//            if (tokens[tmpPos].getTokenName() == "=") {
+//                /*do LVal*/
+//                pos = parseLVal(pos,&stmtNode); //LVal
+//                stmtNode.addLeaf(tokens[pos],pos);pos++;//=
+//                if (tokens[pos].getType() == TokenType::GETINTTK) {
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;//getint
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;//(
+//                    if (tokens[pos].getTokenName() == ")") {
+//                        stmtNode.addLeaf(tokens[pos],pos);pos++;//)
+//                    }
+//                    if (tokens[pos].getTokenName() == ";") {//;
+//                        stmtNode.addLeaf(tokens[pos],pos);pos++;
+//                    }
+//                }
+//                else {
+//                    pos = parseExp(pos,&stmtNode);
+//                    if (tokens[pos].getTokenName() == ";") {//;
+//                        stmtNode.addLeaf(tokens[pos],pos);pos++;
+//                    }
+//                }
+//            }
+//            else {
+//                /*do Exp*/
+//                pos = parseExp(pos,&stmtNode);
+//                if (tokens[pos].getTokenName() == ";") {
+//                    stmtNode.addLeaf(tokens[pos],pos);pos++;
+//                }
+//            }
+//        }
+//    }
     tmpNode->addChild(stmtNode);
     return pos;
 }
