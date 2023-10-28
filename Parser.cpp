@@ -114,7 +114,7 @@ int Parser::parseUnaryExp(int pos, Node* tmpNode) {
     return pos;
 }//ok
 
-/*MulExp → UnaryExp | MulExp ('*' | '/' | '%')*/
+/*MulExp → UnaryExp | MulExp ('*' | '/' | '%') UnaryExp*/
 int Parser::parseMulExp(int pos, Node* tmpNode) {
     std::stack<Node> st;
     Node baseMulExp = Node(nullptr,GrammarType::MulExp,pos);
@@ -146,7 +146,6 @@ int Parser::parseAddExp(int pos, Node* tmpNode) {
         addExpNode.addChild(st.top());
         st.top().setParent(&addExpNode);
         addExpNode.addLeaf(tokens[pos], pos);pos++;
-
         pos = parseMulExp(pos, &addExpNode);
         st.push(addExpNode);
     }

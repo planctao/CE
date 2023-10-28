@@ -243,19 +243,19 @@ void Node::buildConstDef(int curScope, int preScope) {
         }
     }
     /*递归查询继续建表*/
-//    for (int i = 0;i < this->children.size() && this->children[i].getLeafTokenName() != "=";i++) {
-//        if (this->children[i].getGrammarType() == GrammarType::ConstExp) {
-//            this->children[i].buildConstExp(curScope,preScope);
-//        }
-//    }
-    if (this->children.size() > 1 && this->getChildren()[1].getLeafTokenName() == "[") {
-        int start = 1;
-        while(start < this->getChildren().size() && this->getChildren()[start].getLeafTokenName() == "[") {
-            start++;
-            auto& tmpConstExpNode = this->getChildren()[start];
-            tmpConstExpNode.buildConstExp(curScope,preScope);
+    for (int i = 0;i < this->children.size() && this->children[i].getLeafTokenName() != "=";i++) {
+        if (this->children[i].getGrammarType() == GrammarType::ConstExp) {
+            this->children[i].buildConstExp(curScope,preScope);
         }
     }
+//    if (this->children.size() > 1 && this->getChildren()[1].getLeafTokenName() == "[") {
+//        int start = 1;
+//        while(start < this->getChildren().size() && this->getChildren()[start].getLeafTokenName() == "[") {
+//            start++;
+//            auto& tmpConstExpNode = this->getChildren()[start];
+//            tmpConstExpNode.buildConstExp(curScope,preScope);
+//        }
+//    }
     if (this->children.back().getGrammarType() == GrammarType::ConstInitVal) {
         this->children.back().buildConstInitial(curScope,preScope);
     }
