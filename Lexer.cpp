@@ -205,7 +205,6 @@ void Lexer::output() {
     std::ofstream fout;
     fout.open("output.txt");
     for (auto& tmpToken: this->tokens) {
-        //std::cout << tmpToken.formatOutput() << std::endl;
         fout << tmpToken.formatOutput() << " " << tmpToken.getLine() << std::endl;
     }
     fout.close();

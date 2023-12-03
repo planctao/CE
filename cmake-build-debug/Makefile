@@ -230,6 +230,789 @@ GrammarTree/Token.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/GrammarTree/Token.cpp.s
 .PHONY : GrammarTree/Token.cpp.s
 
+LLVM/BasicBlock/BasicBlock.obj: LLVM/BasicBlock/BasicBlock.cpp.obj
+
+.PHONY : LLVM/BasicBlock/BasicBlock.obj
+
+# target to build an object file
+LLVM/BasicBlock/BasicBlock.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj
+.PHONY : LLVM/BasicBlock/BasicBlock.cpp.obj
+
+LLVM/BasicBlock/BasicBlock.i: LLVM/BasicBlock/BasicBlock.cpp.i
+
+.PHONY : LLVM/BasicBlock/BasicBlock.i
+
+# target to preprocess a source file
+LLVM/BasicBlock/BasicBlock.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.i
+.PHONY : LLVM/BasicBlock/BasicBlock.cpp.i
+
+LLVM/BasicBlock/BasicBlock.s: LLVM/BasicBlock/BasicBlock.cpp.s
+
+.PHONY : LLVM/BasicBlock/BasicBlock.s
+
+# target to generate assembly for a file
+LLVM/BasicBlock/BasicBlock.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.s
+.PHONY : LLVM/BasicBlock/BasicBlock.cpp.s
+
+LLVM/BasicBlock/BasicBlockBuilder.obj: LLVM/BasicBlock/BasicBlockBuilder.cpp.obj
+
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.obj
+
+# target to build an object file
+LLVM/BasicBlock/BasicBlockBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.cpp.obj
+
+LLVM/BasicBlock/BasicBlockBuilder.i: LLVM/BasicBlock/BasicBlockBuilder.cpp.i
+
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.i
+
+# target to preprocess a source file
+LLVM/BasicBlock/BasicBlockBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.i
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.cpp.i
+
+LLVM/BasicBlock/BasicBlockBuilder.s: LLVM/BasicBlock/BasicBlockBuilder.cpp.s
+
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.s
+
+# target to generate assembly for a file
+LLVM/BasicBlock/BasicBlockBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.s
+.PHONY : LLVM/BasicBlock/BasicBlockBuilder.cpp.s
+
+LLVM/Function/Function.obj: LLVM/Function/Function.cpp.obj
+
+.PHONY : LLVM/Function/Function.obj
+
+# target to build an object file
+LLVM/Function/Function.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj
+.PHONY : LLVM/Function/Function.cpp.obj
+
+LLVM/Function/Function.i: LLVM/Function/Function.cpp.i
+
+.PHONY : LLVM/Function/Function.i
+
+# target to preprocess a source file
+LLVM/Function/Function.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.i
+.PHONY : LLVM/Function/Function.cpp.i
+
+LLVM/Function/Function.s: LLVM/Function/Function.cpp.s
+
+.PHONY : LLVM/Function/Function.s
+
+# target to generate assembly for a file
+LLVM/Function/Function.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.s
+.PHONY : LLVM/Function/Function.cpp.s
+
+LLVM/Function/FunctionBuilder.obj: LLVM/Function/FunctionBuilder.cpp.obj
+
+.PHONY : LLVM/Function/FunctionBuilder.obj
+
+# target to build an object file
+LLVM/Function/FunctionBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj
+.PHONY : LLVM/Function/FunctionBuilder.cpp.obj
+
+LLVM/Function/FunctionBuilder.i: LLVM/Function/FunctionBuilder.cpp.i
+
+.PHONY : LLVM/Function/FunctionBuilder.i
+
+# target to preprocess a source file
+LLVM/Function/FunctionBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.i
+.PHONY : LLVM/Function/FunctionBuilder.cpp.i
+
+LLVM/Function/FunctionBuilder.s: LLVM/Function/FunctionBuilder.cpp.s
+
+.PHONY : LLVM/Function/FunctionBuilder.s
+
+# target to generate assembly for a file
+LLVM/Function/FunctionBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.s
+.PHONY : LLVM/Function/FunctionBuilder.cpp.s
+
+LLVM/Function/GlobalVar.obj: LLVM/Function/GlobalVar.cpp.obj
+
+.PHONY : LLVM/Function/GlobalVar.obj
+
+# target to build an object file
+LLVM/Function/GlobalVar.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj
+.PHONY : LLVM/Function/GlobalVar.cpp.obj
+
+LLVM/Function/GlobalVar.i: LLVM/Function/GlobalVar.cpp.i
+
+.PHONY : LLVM/Function/GlobalVar.i
+
+# target to preprocess a source file
+LLVM/Function/GlobalVar.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.i
+.PHONY : LLVM/Function/GlobalVar.cpp.i
+
+LLVM/Function/GlobalVar.s: LLVM/Function/GlobalVar.cpp.s
+
+.PHONY : LLVM/Function/GlobalVar.s
+
+# target to generate assembly for a file
+LLVM/Function/GlobalVar.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.s
+.PHONY : LLVM/Function/GlobalVar.cpp.s
+
+LLVM/Function/Param.obj: LLVM/Function/Param.cpp.obj
+
+.PHONY : LLVM/Function/Param.obj
+
+# target to build an object file
+LLVM/Function/Param.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj
+.PHONY : LLVM/Function/Param.cpp.obj
+
+LLVM/Function/Param.i: LLVM/Function/Param.cpp.i
+
+.PHONY : LLVM/Function/Param.i
+
+# target to preprocess a source file
+LLVM/Function/Param.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.i
+.PHONY : LLVM/Function/Param.cpp.i
+
+LLVM/Function/Param.s: LLVM/Function/Param.cpp.s
+
+.PHONY : LLVM/Function/Param.s
+
+# target to generate assembly for a file
+LLVM/Function/Param.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.s
+.PHONY : LLVM/Function/Param.cpp.s
+
+LLVM/Instruction/Alloc.obj: LLVM/Instruction/Alloc.cpp.obj
+
+.PHONY : LLVM/Instruction/Alloc.obj
+
+# target to build an object file
+LLVM/Instruction/Alloc.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj
+.PHONY : LLVM/Instruction/Alloc.cpp.obj
+
+LLVM/Instruction/Alloc.i: LLVM/Instruction/Alloc.cpp.i
+
+.PHONY : LLVM/Instruction/Alloc.i
+
+# target to preprocess a source file
+LLVM/Instruction/Alloc.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.i
+.PHONY : LLVM/Instruction/Alloc.cpp.i
+
+LLVM/Instruction/Alloc.s: LLVM/Instruction/Alloc.cpp.s
+
+.PHONY : LLVM/Instruction/Alloc.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Alloc.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.s
+.PHONY : LLVM/Instruction/Alloc.cpp.s
+
+LLVM/Instruction/AllocInstruction.obj: LLVM/Instruction/AllocInstruction.cpp.obj
+
+.PHONY : LLVM/Instruction/AllocInstruction.obj
+
+# target to build an object file
+LLVM/Instruction/AllocInstruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj
+.PHONY : LLVM/Instruction/AllocInstruction.cpp.obj
+
+LLVM/Instruction/AllocInstruction.i: LLVM/Instruction/AllocInstruction.cpp.i
+
+.PHONY : LLVM/Instruction/AllocInstruction.i
+
+# target to preprocess a source file
+LLVM/Instruction/AllocInstruction.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.i
+.PHONY : LLVM/Instruction/AllocInstruction.cpp.i
+
+LLVM/Instruction/AllocInstruction.s: LLVM/Instruction/AllocInstruction.cpp.s
+
+.PHONY : LLVM/Instruction/AllocInstruction.s
+
+# target to generate assembly for a file
+LLVM/Instruction/AllocInstruction.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.s
+.PHONY : LLVM/Instruction/AllocInstruction.cpp.s
+
+LLVM/Instruction/BinInstruction.obj: LLVM/Instruction/BinInstruction.cpp.obj
+
+.PHONY : LLVM/Instruction/BinInstruction.obj
+
+# target to build an object file
+LLVM/Instruction/BinInstruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj
+.PHONY : LLVM/Instruction/BinInstruction.cpp.obj
+
+LLVM/Instruction/BinInstruction.i: LLVM/Instruction/BinInstruction.cpp.i
+
+.PHONY : LLVM/Instruction/BinInstruction.i
+
+# target to preprocess a source file
+LLVM/Instruction/BinInstruction.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.i
+.PHONY : LLVM/Instruction/BinInstruction.cpp.i
+
+LLVM/Instruction/BinInstruction.s: LLVM/Instruction/BinInstruction.cpp.s
+
+.PHONY : LLVM/Instruction/BinInstruction.s
+
+# target to generate assembly for a file
+LLVM/Instruction/BinInstruction.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.s
+.PHONY : LLVM/Instruction/BinInstruction.cpp.s
+
+LLVM/Instruction/Br.obj: LLVM/Instruction/Br.cpp.obj
+
+.PHONY : LLVM/Instruction/Br.obj
+
+# target to build an object file
+LLVM/Instruction/Br.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj
+.PHONY : LLVM/Instruction/Br.cpp.obj
+
+LLVM/Instruction/Br.i: LLVM/Instruction/Br.cpp.i
+
+.PHONY : LLVM/Instruction/Br.i
+
+# target to preprocess a source file
+LLVM/Instruction/Br.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.i
+.PHONY : LLVM/Instruction/Br.cpp.i
+
+LLVM/Instruction/Br.s: LLVM/Instruction/Br.cpp.s
+
+.PHONY : LLVM/Instruction/Br.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Br.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.s
+.PHONY : LLVM/Instruction/Br.cpp.s
+
+LLVM/Instruction/Call.obj: LLVM/Instruction/Call.cpp.obj
+
+.PHONY : LLVM/Instruction/Call.obj
+
+# target to build an object file
+LLVM/Instruction/Call.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj
+.PHONY : LLVM/Instruction/Call.cpp.obj
+
+LLVM/Instruction/Call.i: LLVM/Instruction/Call.cpp.i
+
+.PHONY : LLVM/Instruction/Call.i
+
+# target to preprocess a source file
+LLVM/Instruction/Call.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.i
+.PHONY : LLVM/Instruction/Call.cpp.i
+
+LLVM/Instruction/Call.s: LLVM/Instruction/Call.cpp.s
+
+.PHONY : LLVM/Instruction/Call.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Call.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.s
+.PHONY : LLVM/Instruction/Call.cpp.s
+
+LLVM/Instruction/GEP.obj: LLVM/Instruction/GEP.cpp.obj
+
+.PHONY : LLVM/Instruction/GEP.obj
+
+# target to build an object file
+LLVM/Instruction/GEP.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj
+.PHONY : LLVM/Instruction/GEP.cpp.obj
+
+LLVM/Instruction/GEP.i: LLVM/Instruction/GEP.cpp.i
+
+.PHONY : LLVM/Instruction/GEP.i
+
+# target to preprocess a source file
+LLVM/Instruction/GEP.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.i
+.PHONY : LLVM/Instruction/GEP.cpp.i
+
+LLVM/Instruction/GEP.s: LLVM/Instruction/GEP.cpp.s
+
+.PHONY : LLVM/Instruction/GEP.s
+
+# target to generate assembly for a file
+LLVM/Instruction/GEP.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.s
+.PHONY : LLVM/Instruction/GEP.cpp.s
+
+LLVM/Instruction/Icmp.obj: LLVM/Instruction/Icmp.cpp.obj
+
+.PHONY : LLVM/Instruction/Icmp.obj
+
+# target to build an object file
+LLVM/Instruction/Icmp.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj
+.PHONY : LLVM/Instruction/Icmp.cpp.obj
+
+LLVM/Instruction/Icmp.i: LLVM/Instruction/Icmp.cpp.i
+
+.PHONY : LLVM/Instruction/Icmp.i
+
+# target to preprocess a source file
+LLVM/Instruction/Icmp.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.i
+.PHONY : LLVM/Instruction/Icmp.cpp.i
+
+LLVM/Instruction/Icmp.s: LLVM/Instruction/Icmp.cpp.s
+
+.PHONY : LLVM/Instruction/Icmp.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Icmp.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.s
+.PHONY : LLVM/Instruction/Icmp.cpp.s
+
+LLVM/Instruction/Instruction.obj: LLVM/Instruction/Instruction.cpp.obj
+
+.PHONY : LLVM/Instruction/Instruction.obj
+
+# target to build an object file
+LLVM/Instruction/Instruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj
+.PHONY : LLVM/Instruction/Instruction.cpp.obj
+
+LLVM/Instruction/Instruction.i: LLVM/Instruction/Instruction.cpp.i
+
+.PHONY : LLVM/Instruction/Instruction.i
+
+# target to preprocess a source file
+LLVM/Instruction/Instruction.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.i
+.PHONY : LLVM/Instruction/Instruction.cpp.i
+
+LLVM/Instruction/Instruction.s: LLVM/Instruction/Instruction.cpp.s
+
+.PHONY : LLVM/Instruction/Instruction.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Instruction.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.s
+.PHONY : LLVM/Instruction/Instruction.cpp.s
+
+LLVM/Instruction/InstructionBuilder.obj: LLVM/Instruction/InstructionBuilder.cpp.obj
+
+.PHONY : LLVM/Instruction/InstructionBuilder.obj
+
+# target to build an object file
+LLVM/Instruction/InstructionBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj
+.PHONY : LLVM/Instruction/InstructionBuilder.cpp.obj
+
+LLVM/Instruction/InstructionBuilder.i: LLVM/Instruction/InstructionBuilder.cpp.i
+
+.PHONY : LLVM/Instruction/InstructionBuilder.i
+
+# target to preprocess a source file
+LLVM/Instruction/InstructionBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.i
+.PHONY : LLVM/Instruction/InstructionBuilder.cpp.i
+
+LLVM/Instruction/InstructionBuilder.s: LLVM/Instruction/InstructionBuilder.cpp.s
+
+.PHONY : LLVM/Instruction/InstructionBuilder.s
+
+# target to generate assembly for a file
+LLVM/Instruction/InstructionBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.s
+.PHONY : LLVM/Instruction/InstructionBuilder.cpp.s
+
+LLVM/Instruction/Load.obj: LLVM/Instruction/Load.cpp.obj
+
+.PHONY : LLVM/Instruction/Load.obj
+
+# target to build an object file
+LLVM/Instruction/Load.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj
+.PHONY : LLVM/Instruction/Load.cpp.obj
+
+LLVM/Instruction/Load.i: LLVM/Instruction/Load.cpp.i
+
+.PHONY : LLVM/Instruction/Load.i
+
+# target to preprocess a source file
+LLVM/Instruction/Load.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.i
+.PHONY : LLVM/Instruction/Load.cpp.i
+
+LLVM/Instruction/Load.s: LLVM/Instruction/Load.cpp.s
+
+.PHONY : LLVM/Instruction/Load.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Load.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.s
+.PHONY : LLVM/Instruction/Load.cpp.s
+
+LLVM/Instruction/Return.obj: LLVM/Instruction/Return.cpp.obj
+
+.PHONY : LLVM/Instruction/Return.obj
+
+# target to build an object file
+LLVM/Instruction/Return.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj
+.PHONY : LLVM/Instruction/Return.cpp.obj
+
+LLVM/Instruction/Return.i: LLVM/Instruction/Return.cpp.i
+
+.PHONY : LLVM/Instruction/Return.i
+
+# target to preprocess a source file
+LLVM/Instruction/Return.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.i
+.PHONY : LLVM/Instruction/Return.cpp.i
+
+LLVM/Instruction/Return.s: LLVM/Instruction/Return.cpp.s
+
+.PHONY : LLVM/Instruction/Return.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Return.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.s
+.PHONY : LLVM/Instruction/Return.cpp.s
+
+LLVM/Instruction/Store.obj: LLVM/Instruction/Store.cpp.obj
+
+.PHONY : LLVM/Instruction/Store.obj
+
+# target to build an object file
+LLVM/Instruction/Store.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj
+.PHONY : LLVM/Instruction/Store.cpp.obj
+
+LLVM/Instruction/Store.i: LLVM/Instruction/Store.cpp.i
+
+.PHONY : LLVM/Instruction/Store.i
+
+# target to preprocess a source file
+LLVM/Instruction/Store.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.i
+.PHONY : LLVM/Instruction/Store.cpp.i
+
+LLVM/Instruction/Store.s: LLVM/Instruction/Store.cpp.s
+
+.PHONY : LLVM/Instruction/Store.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Store.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.s
+.PHONY : LLVM/Instruction/Store.cpp.s
+
+LLVM/Instruction/Trunc.obj: LLVM/Instruction/Trunc.cpp.obj
+
+.PHONY : LLVM/Instruction/Trunc.obj
+
+# target to build an object file
+LLVM/Instruction/Trunc.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj
+.PHONY : LLVM/Instruction/Trunc.cpp.obj
+
+LLVM/Instruction/Trunc.i: LLVM/Instruction/Trunc.cpp.i
+
+.PHONY : LLVM/Instruction/Trunc.i
+
+# target to preprocess a source file
+LLVM/Instruction/Trunc.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.i
+.PHONY : LLVM/Instruction/Trunc.cpp.i
+
+LLVM/Instruction/Trunc.s: LLVM/Instruction/Trunc.cpp.s
+
+.PHONY : LLVM/Instruction/Trunc.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Trunc.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.s
+.PHONY : LLVM/Instruction/Trunc.cpp.s
+
+LLVM/Instruction/Zext.obj: LLVM/Instruction/Zext.cpp.obj
+
+.PHONY : LLVM/Instruction/Zext.obj
+
+# target to build an object file
+LLVM/Instruction/Zext.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj
+.PHONY : LLVM/Instruction/Zext.cpp.obj
+
+LLVM/Instruction/Zext.i: LLVM/Instruction/Zext.cpp.i
+
+.PHONY : LLVM/Instruction/Zext.i
+
+# target to preprocess a source file
+LLVM/Instruction/Zext.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.i
+.PHONY : LLVM/Instruction/Zext.cpp.i
+
+LLVM/Instruction/Zext.s: LLVM/Instruction/Zext.cpp.s
+
+.PHONY : LLVM/Instruction/Zext.s
+
+# target to generate assembly for a file
+LLVM/Instruction/Zext.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.s
+.PHONY : LLVM/Instruction/Zext.cpp.s
+
+LLVM/IrUser.obj: LLVM/IrUser.cpp.obj
+
+.PHONY : LLVM/IrUser.obj
+
+# target to build an object file
+LLVM/IrUser.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj
+.PHONY : LLVM/IrUser.cpp.obj
+
+LLVM/IrUser.i: LLVM/IrUser.cpp.i
+
+.PHONY : LLVM/IrUser.i
+
+# target to preprocess a source file
+LLVM/IrUser.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrUser.cpp.i
+.PHONY : LLVM/IrUser.cpp.i
+
+LLVM/IrUser.s: LLVM/IrUser.cpp.s
+
+.PHONY : LLVM/IrUser.s
+
+# target to generate assembly for a file
+LLVM/IrUser.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrUser.cpp.s
+.PHONY : LLVM/IrUser.cpp.s
+
+LLVM/IrValue.obj: LLVM/IrValue.cpp.obj
+
+.PHONY : LLVM/IrValue.obj
+
+# target to build an object file
+LLVM/IrValue.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj
+.PHONY : LLVM/IrValue.cpp.obj
+
+LLVM/IrValue.i: LLVM/IrValue.cpp.i
+
+.PHONY : LLVM/IrValue.i
+
+# target to preprocess a source file
+LLVM/IrValue.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrValue.cpp.i
+.PHONY : LLVM/IrValue.cpp.i
+
+LLVM/IrValue.s: LLVM/IrValue.cpp.s
+
+.PHONY : LLVM/IrValue.s
+
+# target to generate assembly for a file
+LLVM/IrValue.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/IrValue.cpp.s
+.PHONY : LLVM/IrValue.cpp.s
+
+LLVM/Module/Module.obj: LLVM/Module/Module.cpp.obj
+
+.PHONY : LLVM/Module/Module.obj
+
+# target to build an object file
+LLVM/Module/Module.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj
+.PHONY : LLVM/Module/Module.cpp.obj
+
+LLVM/Module/Module.i: LLVM/Module/Module.cpp.i
+
+.PHONY : LLVM/Module/Module.i
+
+# target to preprocess a source file
+LLVM/Module/Module.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.i
+.PHONY : LLVM/Module/Module.cpp.i
+
+LLVM/Module/Module.s: LLVM/Module/Module.cpp.s
+
+.PHONY : LLVM/Module/Module.s
+
+# target to generate assembly for a file
+LLVM/Module/Module.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.s
+.PHONY : LLVM/Module/Module.cpp.s
+
+LLVM/Use.obj: LLVM/Use.cpp.obj
+
+.PHONY : LLVM/Use.obj
+
+# target to build an object file
+LLVM/Use.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Use.cpp.obj
+.PHONY : LLVM/Use.cpp.obj
+
+LLVM/Use.i: LLVM/Use.cpp.i
+
+.PHONY : LLVM/Use.i
+
+# target to preprocess a source file
+LLVM/Use.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Use.cpp.i
+.PHONY : LLVM/Use.cpp.i
+
+LLVM/Use.s: LLVM/Use.cpp.s
+
+.PHONY : LLVM/Use.s
+
+# target to generate assembly for a file
+LLVM/Use.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/Use.cpp.s
+.PHONY : LLVM/Use.cpp.s
+
+LLVM/ValueType/ArrayType.obj: LLVM/ValueType/ArrayType.cpp.obj
+
+.PHONY : LLVM/ValueType/ArrayType.obj
+
+# target to build an object file
+LLVM/ValueType/ArrayType.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj
+.PHONY : LLVM/ValueType/ArrayType.cpp.obj
+
+LLVM/ValueType/ArrayType.i: LLVM/ValueType/ArrayType.cpp.i
+
+.PHONY : LLVM/ValueType/ArrayType.i
+
+# target to preprocess a source file
+LLVM/ValueType/ArrayType.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.i
+.PHONY : LLVM/ValueType/ArrayType.cpp.i
+
+LLVM/ValueType/ArrayType.s: LLVM/ValueType/ArrayType.cpp.s
+
+.PHONY : LLVM/ValueType/ArrayType.s
+
+# target to generate assembly for a file
+LLVM/ValueType/ArrayType.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.s
+.PHONY : LLVM/ValueType/ArrayType.cpp.s
+
+LLVM/ValueType/IntegerType.obj: LLVM/ValueType/IntegerType.cpp.obj
+
+.PHONY : LLVM/ValueType/IntegerType.obj
+
+# target to build an object file
+LLVM/ValueType/IntegerType.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj
+.PHONY : LLVM/ValueType/IntegerType.cpp.obj
+
+LLVM/ValueType/IntegerType.i: LLVM/ValueType/IntegerType.cpp.i
+
+.PHONY : LLVM/ValueType/IntegerType.i
+
+# target to preprocess a source file
+LLVM/ValueType/IntegerType.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.i
+.PHONY : LLVM/ValueType/IntegerType.cpp.i
+
+LLVM/ValueType/IntegerType.s: LLVM/ValueType/IntegerType.cpp.s
+
+.PHONY : LLVM/ValueType/IntegerType.s
+
+# target to generate assembly for a file
+LLVM/ValueType/IntegerType.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.s
+.PHONY : LLVM/ValueType/IntegerType.cpp.s
+
+LLVM/ValueType/NumberType.obj: LLVM/ValueType/NumberType.cpp.obj
+
+.PHONY : LLVM/ValueType/NumberType.obj
+
+# target to build an object file
+LLVM/ValueType/NumberType.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj
+.PHONY : LLVM/ValueType/NumberType.cpp.obj
+
+LLVM/ValueType/NumberType.i: LLVM/ValueType/NumberType.cpp.i
+
+.PHONY : LLVM/ValueType/NumberType.i
+
+# target to preprocess a source file
+LLVM/ValueType/NumberType.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.i
+.PHONY : LLVM/ValueType/NumberType.cpp.i
+
+LLVM/ValueType/NumberType.s: LLVM/ValueType/NumberType.cpp.s
+
+.PHONY : LLVM/ValueType/NumberType.s
+
+# target to generate assembly for a file
+LLVM/ValueType/NumberType.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.s
+.PHONY : LLVM/ValueType/NumberType.cpp.s
+
+LLVM/ValueType/PointerType.obj: LLVM/ValueType/PointerType.cpp.obj
+
+.PHONY : LLVM/ValueType/PointerType.obj
+
+# target to build an object file
+LLVM/ValueType/PointerType.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj
+.PHONY : LLVM/ValueType/PointerType.cpp.obj
+
+LLVM/ValueType/PointerType.i: LLVM/ValueType/PointerType.cpp.i
+
+.PHONY : LLVM/ValueType/PointerType.i
+
+# target to preprocess a source file
+LLVM/ValueType/PointerType.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.i
+.PHONY : LLVM/ValueType/PointerType.cpp.i
+
+LLVM/ValueType/PointerType.s: LLVM/ValueType/PointerType.cpp.s
+
+.PHONY : LLVM/ValueType/PointerType.s
+
+# target to generate assembly for a file
+LLVM/ValueType/PointerType.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.s
+.PHONY : LLVM/ValueType/PointerType.cpp.s
+
+LLVM/ValueType/ValueType.obj: LLVM/ValueType/ValueType.cpp.obj
+
+.PHONY : LLVM/ValueType/ValueType.obj
+
+# target to build an object file
+LLVM/ValueType/ValueType.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj
+.PHONY : LLVM/ValueType/ValueType.cpp.obj
+
+LLVM/ValueType/ValueType.i: LLVM/ValueType/ValueType.cpp.i
+
+.PHONY : LLVM/ValueType/ValueType.i
+
+# target to preprocess a source file
+LLVM/ValueType/ValueType.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.i
+.PHONY : LLVM/ValueType/ValueType.cpp.i
+
+LLVM/ValueType/ValueType.s: LLVM/ValueType/ValueType.cpp.s
+
+.PHONY : LLVM/ValueType/ValueType.s
+
+# target to generate assembly for a file
+LLVM/ValueType/ValueType.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.s
+.PHONY : LLVM/ValueType/ValueType.cpp.s
+
 Lexer.obj: Lexer.cpp.obj
 
 .PHONY : Lexer.obj
@@ -256,6 +1039,843 @@ Lexer.s: Lexer.cpp.s
 Lexer.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
+
+MIPS/BasicBlock/MipsBasicBlock.obj: MIPS/BasicBlock/MipsBasicBlock.cpp.obj
+
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.obj
+
+# target to build an object file
+MIPS/BasicBlock/MipsBasicBlock.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.cpp.obj
+
+MIPS/BasicBlock/MipsBasicBlock.i: MIPS/BasicBlock/MipsBasicBlock.cpp.i
+
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.i
+
+# target to preprocess a source file
+MIPS/BasicBlock/MipsBasicBlock.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.i
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.cpp.i
+
+MIPS/BasicBlock/MipsBasicBlock.s: MIPS/BasicBlock/MipsBasicBlock.cpp.s
+
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.s
+
+# target to generate assembly for a file
+MIPS/BasicBlock/MipsBasicBlock.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.s
+.PHONY : MIPS/BasicBlock/MipsBasicBlock.cpp.s
+
+MIPS/BasicBlock/MipsBlockBuilder.obj: MIPS/BasicBlock/MipsBlockBuilder.cpp.obj
+
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.obj
+
+# target to build an object file
+MIPS/BasicBlock/MipsBlockBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.cpp.obj
+
+MIPS/BasicBlock/MipsBlockBuilder.i: MIPS/BasicBlock/MipsBlockBuilder.cpp.i
+
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.i
+
+# target to preprocess a source file
+MIPS/BasicBlock/MipsBlockBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.i
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.cpp.i
+
+MIPS/BasicBlock/MipsBlockBuilder.s: MIPS/BasicBlock/MipsBlockBuilder.cpp.s
+
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.s
+
+# target to generate assembly for a file
+MIPS/BasicBlock/MipsBlockBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.s
+.PHONY : MIPS/BasicBlock/MipsBlockBuilder.cpp.s
+
+MIPS/Function/Asciiz.obj: MIPS/Function/Asciiz.cpp.obj
+
+.PHONY : MIPS/Function/Asciiz.obj
+
+# target to build an object file
+MIPS/Function/Asciiz.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj
+.PHONY : MIPS/Function/Asciiz.cpp.obj
+
+MIPS/Function/Asciiz.i: MIPS/Function/Asciiz.cpp.i
+
+.PHONY : MIPS/Function/Asciiz.i
+
+# target to preprocess a source file
+MIPS/Function/Asciiz.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.i
+.PHONY : MIPS/Function/Asciiz.cpp.i
+
+MIPS/Function/Asciiz.s: MIPS/Function/Asciiz.cpp.s
+
+.PHONY : MIPS/Function/Asciiz.s
+
+# target to generate assembly for a file
+MIPS/Function/Asciiz.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.s
+.PHONY : MIPS/Function/Asciiz.cpp.s
+
+MIPS/Function/MipsFunction.obj: MIPS/Function/MipsFunction.cpp.obj
+
+.PHONY : MIPS/Function/MipsFunction.obj
+
+# target to build an object file
+MIPS/Function/MipsFunction.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj
+.PHONY : MIPS/Function/MipsFunction.cpp.obj
+
+MIPS/Function/MipsFunction.i: MIPS/Function/MipsFunction.cpp.i
+
+.PHONY : MIPS/Function/MipsFunction.i
+
+# target to preprocess a source file
+MIPS/Function/MipsFunction.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.i
+.PHONY : MIPS/Function/MipsFunction.cpp.i
+
+MIPS/Function/MipsFunction.s: MIPS/Function/MipsFunction.cpp.s
+
+.PHONY : MIPS/Function/MipsFunction.s
+
+# target to generate assembly for a file
+MIPS/Function/MipsFunction.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.s
+.PHONY : MIPS/Function/MipsFunction.cpp.s
+
+MIPS/Function/Word.obj: MIPS/Function/Word.cpp.obj
+
+.PHONY : MIPS/Function/Word.obj
+
+# target to build an object file
+MIPS/Function/Word.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj
+.PHONY : MIPS/Function/Word.cpp.obj
+
+MIPS/Function/Word.i: MIPS/Function/Word.cpp.i
+
+.PHONY : MIPS/Function/Word.i
+
+# target to preprocess a source file
+MIPS/Function/Word.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.i
+.PHONY : MIPS/Function/Word.cpp.i
+
+MIPS/Function/Word.s: MIPS/Function/Word.cpp.s
+
+.PHONY : MIPS/Function/Word.s
+
+# target to generate assembly for a file
+MIPS/Function/Word.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.s
+.PHONY : MIPS/Function/Word.cpp.s
+
+MIPS/Instructioin/Add.obj: MIPS/Instructioin/Add.cpp.obj
+
+.PHONY : MIPS/Instructioin/Add.obj
+
+# target to build an object file
+MIPS/Instructioin/Add.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj
+.PHONY : MIPS/Instructioin/Add.cpp.obj
+
+MIPS/Instructioin/Add.i: MIPS/Instructioin/Add.cpp.i
+
+.PHONY : MIPS/Instructioin/Add.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Add.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.i
+.PHONY : MIPS/Instructioin/Add.cpp.i
+
+MIPS/Instructioin/Add.s: MIPS/Instructioin/Add.cpp.s
+
+.PHONY : MIPS/Instructioin/Add.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Add.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.s
+.PHONY : MIPS/Instructioin/Add.cpp.s
+
+MIPS/Instructioin/Addi.obj: MIPS/Instructioin/Addi.cpp.obj
+
+.PHONY : MIPS/Instructioin/Addi.obj
+
+# target to build an object file
+MIPS/Instructioin/Addi.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj
+.PHONY : MIPS/Instructioin/Addi.cpp.obj
+
+MIPS/Instructioin/Addi.i: MIPS/Instructioin/Addi.cpp.i
+
+.PHONY : MIPS/Instructioin/Addi.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Addi.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.i
+.PHONY : MIPS/Instructioin/Addi.cpp.i
+
+MIPS/Instructioin/Addi.s: MIPS/Instructioin/Addi.cpp.s
+
+.PHONY : MIPS/Instructioin/Addi.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Addi.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.s
+.PHONY : MIPS/Instructioin/Addi.cpp.s
+
+MIPS/Instructioin/Beq.obj: MIPS/Instructioin/Beq.cpp.obj
+
+.PHONY : MIPS/Instructioin/Beq.obj
+
+# target to build an object file
+MIPS/Instructioin/Beq.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj
+.PHONY : MIPS/Instructioin/Beq.cpp.obj
+
+MIPS/Instructioin/Beq.i: MIPS/Instructioin/Beq.cpp.i
+
+.PHONY : MIPS/Instructioin/Beq.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Beq.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.i
+.PHONY : MIPS/Instructioin/Beq.cpp.i
+
+MIPS/Instructioin/Beq.s: MIPS/Instructioin/Beq.cpp.s
+
+.PHONY : MIPS/Instructioin/Beq.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Beq.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.s
+.PHONY : MIPS/Instructioin/Beq.cpp.s
+
+MIPS/Instructioin/Bne.obj: MIPS/Instructioin/Bne.cpp.obj
+
+.PHONY : MIPS/Instructioin/Bne.obj
+
+# target to build an object file
+MIPS/Instructioin/Bne.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj
+.PHONY : MIPS/Instructioin/Bne.cpp.obj
+
+MIPS/Instructioin/Bne.i: MIPS/Instructioin/Bne.cpp.i
+
+.PHONY : MIPS/Instructioin/Bne.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Bne.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.i
+.PHONY : MIPS/Instructioin/Bne.cpp.i
+
+MIPS/Instructioin/Bne.s: MIPS/Instructioin/Bne.cpp.s
+
+.PHONY : MIPS/Instructioin/Bne.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Bne.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.s
+.PHONY : MIPS/Instructioin/Bne.cpp.s
+
+MIPS/Instructioin/Cmp.obj: MIPS/Instructioin/Cmp.cpp.obj
+
+.PHONY : MIPS/Instructioin/Cmp.obj
+
+# target to build an object file
+MIPS/Instructioin/Cmp.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj
+.PHONY : MIPS/Instructioin/Cmp.cpp.obj
+
+MIPS/Instructioin/Cmp.i: MIPS/Instructioin/Cmp.cpp.i
+
+.PHONY : MIPS/Instructioin/Cmp.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Cmp.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.i
+.PHONY : MIPS/Instructioin/Cmp.cpp.i
+
+MIPS/Instructioin/Cmp.s: MIPS/Instructioin/Cmp.cpp.s
+
+.PHONY : MIPS/Instructioin/Cmp.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Cmp.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.s
+.PHONY : MIPS/Instructioin/Cmp.cpp.s
+
+MIPS/Instructioin/Div.obj: MIPS/Instructioin/Div.cpp.obj
+
+.PHONY : MIPS/Instructioin/Div.obj
+
+# target to build an object file
+MIPS/Instructioin/Div.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj
+.PHONY : MIPS/Instructioin/Div.cpp.obj
+
+MIPS/Instructioin/Div.i: MIPS/Instructioin/Div.cpp.i
+
+.PHONY : MIPS/Instructioin/Div.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Div.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.i
+.PHONY : MIPS/Instructioin/Div.cpp.i
+
+MIPS/Instructioin/Div.s: MIPS/Instructioin/Div.cpp.s
+
+.PHONY : MIPS/Instructioin/Div.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Div.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.s
+.PHONY : MIPS/Instructioin/Div.cpp.s
+
+MIPS/Instructioin/J.obj: MIPS/Instructioin/J.cpp.obj
+
+.PHONY : MIPS/Instructioin/J.obj
+
+# target to build an object file
+MIPS/Instructioin/J.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj
+.PHONY : MIPS/Instructioin/J.cpp.obj
+
+MIPS/Instructioin/J.i: MIPS/Instructioin/J.cpp.i
+
+.PHONY : MIPS/Instructioin/J.i
+
+# target to preprocess a source file
+MIPS/Instructioin/J.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.i
+.PHONY : MIPS/Instructioin/J.cpp.i
+
+MIPS/Instructioin/J.s: MIPS/Instructioin/J.cpp.s
+
+.PHONY : MIPS/Instructioin/J.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/J.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.s
+.PHONY : MIPS/Instructioin/J.cpp.s
+
+MIPS/Instructioin/Jal.obj: MIPS/Instructioin/Jal.cpp.obj
+
+.PHONY : MIPS/Instructioin/Jal.obj
+
+# target to build an object file
+MIPS/Instructioin/Jal.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj
+.PHONY : MIPS/Instructioin/Jal.cpp.obj
+
+MIPS/Instructioin/Jal.i: MIPS/Instructioin/Jal.cpp.i
+
+.PHONY : MIPS/Instructioin/Jal.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Jal.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.i
+.PHONY : MIPS/Instructioin/Jal.cpp.i
+
+MIPS/Instructioin/Jal.s: MIPS/Instructioin/Jal.cpp.s
+
+.PHONY : MIPS/Instructioin/Jal.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Jal.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.s
+.PHONY : MIPS/Instructioin/Jal.cpp.s
+
+MIPS/Instructioin/Jr.obj: MIPS/Instructioin/Jr.cpp.obj
+
+.PHONY : MIPS/Instructioin/Jr.obj
+
+# target to build an object file
+MIPS/Instructioin/Jr.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj
+.PHONY : MIPS/Instructioin/Jr.cpp.obj
+
+MIPS/Instructioin/Jr.i: MIPS/Instructioin/Jr.cpp.i
+
+.PHONY : MIPS/Instructioin/Jr.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Jr.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.i
+.PHONY : MIPS/Instructioin/Jr.cpp.i
+
+MIPS/Instructioin/Jr.s: MIPS/Instructioin/Jr.cpp.s
+
+.PHONY : MIPS/Instructioin/Jr.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Jr.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.s
+.PHONY : MIPS/Instructioin/Jr.cpp.s
+
+MIPS/Instructioin/La.obj: MIPS/Instructioin/La.cpp.obj
+
+.PHONY : MIPS/Instructioin/La.obj
+
+# target to build an object file
+MIPS/Instructioin/La.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj
+.PHONY : MIPS/Instructioin/La.cpp.obj
+
+MIPS/Instructioin/La.i: MIPS/Instructioin/La.cpp.i
+
+.PHONY : MIPS/Instructioin/La.i
+
+# target to preprocess a source file
+MIPS/Instructioin/La.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.i
+.PHONY : MIPS/Instructioin/La.cpp.i
+
+MIPS/Instructioin/La.s: MIPS/Instructioin/La.cpp.s
+
+.PHONY : MIPS/Instructioin/La.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/La.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.s
+.PHONY : MIPS/Instructioin/La.cpp.s
+
+MIPS/Instructioin/Li.obj: MIPS/Instructioin/Li.cpp.obj
+
+.PHONY : MIPS/Instructioin/Li.obj
+
+# target to build an object file
+MIPS/Instructioin/Li.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj
+.PHONY : MIPS/Instructioin/Li.cpp.obj
+
+MIPS/Instructioin/Li.i: MIPS/Instructioin/Li.cpp.i
+
+.PHONY : MIPS/Instructioin/Li.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Li.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.i
+.PHONY : MIPS/Instructioin/Li.cpp.i
+
+MIPS/Instructioin/Li.s: MIPS/Instructioin/Li.cpp.s
+
+.PHONY : MIPS/Instructioin/Li.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Li.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.s
+.PHONY : MIPS/Instructioin/Li.cpp.s
+
+MIPS/Instructioin/Lw.obj: MIPS/Instructioin/Lw.cpp.obj
+
+.PHONY : MIPS/Instructioin/Lw.obj
+
+# target to build an object file
+MIPS/Instructioin/Lw.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj
+.PHONY : MIPS/Instructioin/Lw.cpp.obj
+
+MIPS/Instructioin/Lw.i: MIPS/Instructioin/Lw.cpp.i
+
+.PHONY : MIPS/Instructioin/Lw.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Lw.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.i
+.PHONY : MIPS/Instructioin/Lw.cpp.i
+
+MIPS/Instructioin/Lw.s: MIPS/Instructioin/Lw.cpp.s
+
+.PHONY : MIPS/Instructioin/Lw.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Lw.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.s
+.PHONY : MIPS/Instructioin/Lw.cpp.s
+
+MIPS/Instructioin/Mfhi.obj: MIPS/Instructioin/Mfhi.cpp.obj
+
+.PHONY : MIPS/Instructioin/Mfhi.obj
+
+# target to build an object file
+MIPS/Instructioin/Mfhi.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj
+.PHONY : MIPS/Instructioin/Mfhi.cpp.obj
+
+MIPS/Instructioin/Mfhi.i: MIPS/Instructioin/Mfhi.cpp.i
+
+.PHONY : MIPS/Instructioin/Mfhi.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Mfhi.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.i
+.PHONY : MIPS/Instructioin/Mfhi.cpp.i
+
+MIPS/Instructioin/Mfhi.s: MIPS/Instructioin/Mfhi.cpp.s
+
+.PHONY : MIPS/Instructioin/Mfhi.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Mfhi.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.s
+.PHONY : MIPS/Instructioin/Mfhi.cpp.s
+
+MIPS/Instructioin/MipsInstruction.obj: MIPS/Instructioin/MipsInstruction.cpp.obj
+
+.PHONY : MIPS/Instructioin/MipsInstruction.obj
+
+# target to build an object file
+MIPS/Instructioin/MipsInstruction.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj
+.PHONY : MIPS/Instructioin/MipsInstruction.cpp.obj
+
+MIPS/Instructioin/MipsInstruction.i: MIPS/Instructioin/MipsInstruction.cpp.i
+
+.PHONY : MIPS/Instructioin/MipsInstruction.i
+
+# target to preprocess a source file
+MIPS/Instructioin/MipsInstruction.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.i
+.PHONY : MIPS/Instructioin/MipsInstruction.cpp.i
+
+MIPS/Instructioin/MipsInstruction.s: MIPS/Instructioin/MipsInstruction.cpp.s
+
+.PHONY : MIPS/Instructioin/MipsInstruction.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/MipsInstruction.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.s
+.PHONY : MIPS/Instructioin/MipsInstruction.cpp.s
+
+MIPS/Instructioin/MipsInstructionBuilder.obj: MIPS/Instructioin/MipsInstructionBuilder.cpp.obj
+
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.obj
+
+# target to build an object file
+MIPS/Instructioin/MipsInstructionBuilder.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.cpp.obj
+
+MIPS/Instructioin/MipsInstructionBuilder.i: MIPS/Instructioin/MipsInstructionBuilder.cpp.i
+
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.i
+
+# target to preprocess a source file
+MIPS/Instructioin/MipsInstructionBuilder.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.i
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.cpp.i
+
+MIPS/Instructioin/MipsInstructionBuilder.s: MIPS/Instructioin/MipsInstructionBuilder.cpp.s
+
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/MipsInstructionBuilder.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.s
+.PHONY : MIPS/Instructioin/MipsInstructionBuilder.cpp.s
+
+MIPS/Instructioin/Move.obj: MIPS/Instructioin/Move.cpp.obj
+
+.PHONY : MIPS/Instructioin/Move.obj
+
+# target to build an object file
+MIPS/Instructioin/Move.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj
+.PHONY : MIPS/Instructioin/Move.cpp.obj
+
+MIPS/Instructioin/Move.i: MIPS/Instructioin/Move.cpp.i
+
+.PHONY : MIPS/Instructioin/Move.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Move.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.i
+.PHONY : MIPS/Instructioin/Move.cpp.i
+
+MIPS/Instructioin/Move.s: MIPS/Instructioin/Move.cpp.s
+
+.PHONY : MIPS/Instructioin/Move.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Move.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.s
+.PHONY : MIPS/Instructioin/Move.cpp.s
+
+MIPS/Instructioin/Mul.obj: MIPS/Instructioin/Mul.cpp.obj
+
+.PHONY : MIPS/Instructioin/Mul.obj
+
+# target to build an object file
+MIPS/Instructioin/Mul.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj
+.PHONY : MIPS/Instructioin/Mul.cpp.obj
+
+MIPS/Instructioin/Mul.i: MIPS/Instructioin/Mul.cpp.i
+
+.PHONY : MIPS/Instructioin/Mul.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Mul.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.i
+.PHONY : MIPS/Instructioin/Mul.cpp.i
+
+MIPS/Instructioin/Mul.s: MIPS/Instructioin/Mul.cpp.s
+
+.PHONY : MIPS/Instructioin/Mul.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Mul.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.s
+.PHONY : MIPS/Instructioin/Mul.cpp.s
+
+MIPS/Instructioin/SLL.obj: MIPS/Instructioin/SLL.cpp.obj
+
+.PHONY : MIPS/Instructioin/SLL.obj
+
+# target to build an object file
+MIPS/Instructioin/SLL.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj
+.PHONY : MIPS/Instructioin/SLL.cpp.obj
+
+MIPS/Instructioin/SLL.i: MIPS/Instructioin/SLL.cpp.i
+
+.PHONY : MIPS/Instructioin/SLL.i
+
+# target to preprocess a source file
+MIPS/Instructioin/SLL.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.i
+.PHONY : MIPS/Instructioin/SLL.cpp.i
+
+MIPS/Instructioin/SLL.s: MIPS/Instructioin/SLL.cpp.s
+
+.PHONY : MIPS/Instructioin/SLL.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/SLL.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.s
+.PHONY : MIPS/Instructioin/SLL.cpp.s
+
+MIPS/Instructioin/Sub.obj: MIPS/Instructioin/Sub.cpp.obj
+
+.PHONY : MIPS/Instructioin/Sub.obj
+
+# target to build an object file
+MIPS/Instructioin/Sub.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj
+.PHONY : MIPS/Instructioin/Sub.cpp.obj
+
+MIPS/Instructioin/Sub.i: MIPS/Instructioin/Sub.cpp.i
+
+.PHONY : MIPS/Instructioin/Sub.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Sub.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.i
+.PHONY : MIPS/Instructioin/Sub.cpp.i
+
+MIPS/Instructioin/Sub.s: MIPS/Instructioin/Sub.cpp.s
+
+.PHONY : MIPS/Instructioin/Sub.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Sub.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.s
+.PHONY : MIPS/Instructioin/Sub.cpp.s
+
+MIPS/Instructioin/Sw.obj: MIPS/Instructioin/Sw.cpp.obj
+
+.PHONY : MIPS/Instructioin/Sw.obj
+
+# target to build an object file
+MIPS/Instructioin/Sw.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj
+.PHONY : MIPS/Instructioin/Sw.cpp.obj
+
+MIPS/Instructioin/Sw.i: MIPS/Instructioin/Sw.cpp.i
+
+.PHONY : MIPS/Instructioin/Sw.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Sw.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.i
+.PHONY : MIPS/Instructioin/Sw.cpp.i
+
+MIPS/Instructioin/Sw.s: MIPS/Instructioin/Sw.cpp.s
+
+.PHONY : MIPS/Instructioin/Sw.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Sw.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.s
+.PHONY : MIPS/Instructioin/Sw.cpp.s
+
+MIPS/Instructioin/Syscall.obj: MIPS/Instructioin/Syscall.cpp.obj
+
+.PHONY : MIPS/Instructioin/Syscall.obj
+
+# target to build an object file
+MIPS/Instructioin/Syscall.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj
+.PHONY : MIPS/Instructioin/Syscall.cpp.obj
+
+MIPS/Instructioin/Syscall.i: MIPS/Instructioin/Syscall.cpp.i
+
+.PHONY : MIPS/Instructioin/Syscall.i
+
+# target to preprocess a source file
+MIPS/Instructioin/Syscall.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.i
+.PHONY : MIPS/Instructioin/Syscall.cpp.i
+
+MIPS/Instructioin/Syscall.s: MIPS/Instructioin/Syscall.cpp.s
+
+.PHONY : MIPS/Instructioin/Syscall.s
+
+# target to generate assembly for a file
+MIPS/Instructioin/Syscall.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.s
+.PHONY : MIPS/Instructioin/Syscall.cpp.s
+
+MIPS/MipsSymbol.obj: MIPS/MipsSymbol.cpp.obj
+
+.PHONY : MIPS/MipsSymbol.obj
+
+# target to build an object file
+MIPS/MipsSymbol.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj
+.PHONY : MIPS/MipsSymbol.cpp.obj
+
+MIPS/MipsSymbol.i: MIPS/MipsSymbol.cpp.i
+
+.PHONY : MIPS/MipsSymbol.i
+
+# target to preprocess a source file
+MIPS/MipsSymbol.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.i
+.PHONY : MIPS/MipsSymbol.cpp.i
+
+MIPS/MipsSymbol.s: MIPS/MipsSymbol.cpp.s
+
+.PHONY : MIPS/MipsSymbol.s
+
+# target to generate assembly for a file
+MIPS/MipsSymbol.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.s
+.PHONY : MIPS/MipsSymbol.cpp.s
+
+MIPS/MipsSymbolTable.obj: MIPS/MipsSymbolTable.cpp.obj
+
+.PHONY : MIPS/MipsSymbolTable.obj
+
+# target to build an object file
+MIPS/MipsSymbolTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj
+.PHONY : MIPS/MipsSymbolTable.cpp.obj
+
+MIPS/MipsSymbolTable.i: MIPS/MipsSymbolTable.cpp.i
+
+.PHONY : MIPS/MipsSymbolTable.i
+
+# target to preprocess a source file
+MIPS/MipsSymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.i
+.PHONY : MIPS/MipsSymbolTable.cpp.i
+
+MIPS/MipsSymbolTable.s: MIPS/MipsSymbolTable.cpp.s
+
+.PHONY : MIPS/MipsSymbolTable.s
+
+# target to generate assembly for a file
+MIPS/MipsSymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.s
+.PHONY : MIPS/MipsSymbolTable.cpp.s
+
+MIPS/Module/MipsModule.obj: MIPS/Module/MipsModule.cpp.obj
+
+.PHONY : MIPS/Module/MipsModule.obj
+
+# target to build an object file
+MIPS/Module/MipsModule.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj
+.PHONY : MIPS/Module/MipsModule.cpp.obj
+
+MIPS/Module/MipsModule.i: MIPS/Module/MipsModule.cpp.i
+
+.PHONY : MIPS/Module/MipsModule.i
+
+# target to preprocess a source file
+MIPS/Module/MipsModule.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.i
+.PHONY : MIPS/Module/MipsModule.cpp.i
+
+MIPS/Module/MipsModule.s: MIPS/Module/MipsModule.cpp.s
+
+.PHONY : MIPS/Module/MipsModule.s
+
+# target to generate assembly for a file
+MIPS/Module/MipsModule.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.s
+.PHONY : MIPS/Module/MipsModule.cpp.s
+
+MIPS/RegFile.obj: MIPS/RegFile.cpp.obj
+
+.PHONY : MIPS/RegFile.obj
+
+# target to build an object file
+MIPS/RegFile.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj
+.PHONY : MIPS/RegFile.cpp.obj
+
+MIPS/RegFile.i: MIPS/RegFile.cpp.i
+
+.PHONY : MIPS/RegFile.i
+
+# target to preprocess a source file
+MIPS/RegFile.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/RegFile.cpp.i
+.PHONY : MIPS/RegFile.cpp.i
+
+MIPS/RegFile.s: MIPS/RegFile.cpp.s
+
+.PHONY : MIPS/RegFile.s
+
+# target to generate assembly for a file
+MIPS/RegFile.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MIPS/RegFile.cpp.s
+.PHONY : MIPS/RegFile.cpp.s
+
+MidCode.obj: MidCode.cpp.obj
+
+.PHONY : MidCode.obj
+
+# target to build an object file
+MidCode.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MidCode.cpp.obj
+.PHONY : MidCode.cpp.obj
+
+MidCode.i: MidCode.cpp.i
+
+.PHONY : MidCode.i
+
+# target to preprocess a source file
+MidCode.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MidCode.cpp.i
+.PHONY : MidCode.cpp.i
+
+MidCode.s: MidCode.cpp.s
+
+.PHONY : MidCode.s
+
+# target to generate assembly for a file
+MidCode.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/MidCode.cpp.s
+.PHONY : MidCode.cpp.s
 
 Parser.obj: Parser.cpp.obj
 
@@ -311,6 +1931,60 @@ Symbol/Symbol.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/Symbol.cpp.s
 .PHONY : Symbol/Symbol.cpp.s
 
+Symbol/SymbolCon.obj: Symbol/SymbolCon.cpp.obj
+
+.PHONY : Symbol/SymbolCon.obj
+
+# target to build an object file
+Symbol/SymbolCon.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj
+.PHONY : Symbol/SymbolCon.cpp.obj
+
+Symbol/SymbolCon.i: Symbol/SymbolCon.cpp.i
+
+.PHONY : Symbol/SymbolCon.i
+
+# target to preprocess a source file
+Symbol/SymbolCon.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.i
+.PHONY : Symbol/SymbolCon.cpp.i
+
+Symbol/SymbolCon.s: Symbol/SymbolCon.cpp.s
+
+.PHONY : Symbol/SymbolCon.s
+
+# target to generate assembly for a file
+Symbol/SymbolCon.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.s
+.PHONY : Symbol/SymbolCon.cpp.s
+
+Symbol/SymbolFunc.obj: Symbol/SymbolFunc.cpp.obj
+
+.PHONY : Symbol/SymbolFunc.obj
+
+# target to build an object file
+Symbol/SymbolFunc.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj
+.PHONY : Symbol/SymbolFunc.cpp.obj
+
+Symbol/SymbolFunc.i: Symbol/SymbolFunc.cpp.i
+
+.PHONY : Symbol/SymbolFunc.i
+
+# target to preprocess a source file
+Symbol/SymbolFunc.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.i
+.PHONY : Symbol/SymbolFunc.cpp.i
+
+Symbol/SymbolFunc.s: Symbol/SymbolFunc.cpp.s
+
+.PHONY : Symbol/SymbolFunc.s
+
+# target to generate assembly for a file
+Symbol/SymbolFunc.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.s
+.PHONY : Symbol/SymbolFunc.cpp.s
+
 Symbol/SymbolTable.obj: Symbol/SymbolTable.cpp.obj
 
 .PHONY : Symbol/SymbolTable.obj
@@ -337,6 +2011,33 @@ Symbol/SymbolTable.s: Symbol/SymbolTable.cpp.s
 Symbol/SymbolTable.cpp.s:
 	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.s
 .PHONY : Symbol/SymbolTable.cpp.s
+
+Symbol/SymbolVar.obj: Symbol/SymbolVar.cpp.obj
+
+.PHONY : Symbol/SymbolVar.obj
+
+# target to build an object file
+Symbol/SymbolVar.cpp.obj:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj
+.PHONY : Symbol/SymbolVar.cpp.obj
+
+Symbol/SymbolVar.i: Symbol/SymbolVar.cpp.i
+
+.PHONY : Symbol/SymbolVar.i
+
+# target to preprocess a source file
+Symbol/SymbolVar.cpp.i:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.i
+.PHONY : Symbol/SymbolVar.cpp.i
+
+Symbol/SymbolVar.s: Symbol/SymbolVar.cpp.s
+
+.PHONY : Symbol/SymbolVar.s
+
+# target to generate assembly for a file
+Symbol/SymbolVar.cpp.s:
+	$(MAKE) -f CMakeFiles\compiler.dir\build.make CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.s
+.PHONY : Symbol/SymbolVar.cpp.s
 
 Util/utils.obj: Util/utils.cpp.obj
 
@@ -413,18 +2114,207 @@ help:
 	@echo ... GrammarTree/Token.obj
 	@echo ... GrammarTree/Token.i
 	@echo ... GrammarTree/Token.s
+	@echo ... LLVM/BasicBlock/BasicBlock.obj
+	@echo ... LLVM/BasicBlock/BasicBlock.i
+	@echo ... LLVM/BasicBlock/BasicBlock.s
+	@echo ... LLVM/BasicBlock/BasicBlockBuilder.obj
+	@echo ... LLVM/BasicBlock/BasicBlockBuilder.i
+	@echo ... LLVM/BasicBlock/BasicBlockBuilder.s
+	@echo ... LLVM/Function/Function.obj
+	@echo ... LLVM/Function/Function.i
+	@echo ... LLVM/Function/Function.s
+	@echo ... LLVM/Function/FunctionBuilder.obj
+	@echo ... LLVM/Function/FunctionBuilder.i
+	@echo ... LLVM/Function/FunctionBuilder.s
+	@echo ... LLVM/Function/GlobalVar.obj
+	@echo ... LLVM/Function/GlobalVar.i
+	@echo ... LLVM/Function/GlobalVar.s
+	@echo ... LLVM/Function/Param.obj
+	@echo ... LLVM/Function/Param.i
+	@echo ... LLVM/Function/Param.s
+	@echo ... LLVM/Instruction/Alloc.obj
+	@echo ... LLVM/Instruction/Alloc.i
+	@echo ... LLVM/Instruction/Alloc.s
+	@echo ... LLVM/Instruction/AllocInstruction.obj
+	@echo ... LLVM/Instruction/AllocInstruction.i
+	@echo ... LLVM/Instruction/AllocInstruction.s
+	@echo ... LLVM/Instruction/BinInstruction.obj
+	@echo ... LLVM/Instruction/BinInstruction.i
+	@echo ... LLVM/Instruction/BinInstruction.s
+	@echo ... LLVM/Instruction/Br.obj
+	@echo ... LLVM/Instruction/Br.i
+	@echo ... LLVM/Instruction/Br.s
+	@echo ... LLVM/Instruction/Call.obj
+	@echo ... LLVM/Instruction/Call.i
+	@echo ... LLVM/Instruction/Call.s
+	@echo ... LLVM/Instruction/GEP.obj
+	@echo ... LLVM/Instruction/GEP.i
+	@echo ... LLVM/Instruction/GEP.s
+	@echo ... LLVM/Instruction/Icmp.obj
+	@echo ... LLVM/Instruction/Icmp.i
+	@echo ... LLVM/Instruction/Icmp.s
+	@echo ... LLVM/Instruction/Instruction.obj
+	@echo ... LLVM/Instruction/Instruction.i
+	@echo ... LLVM/Instruction/Instruction.s
+	@echo ... LLVM/Instruction/InstructionBuilder.obj
+	@echo ... LLVM/Instruction/InstructionBuilder.i
+	@echo ... LLVM/Instruction/InstructionBuilder.s
+	@echo ... LLVM/Instruction/Load.obj
+	@echo ... LLVM/Instruction/Load.i
+	@echo ... LLVM/Instruction/Load.s
+	@echo ... LLVM/Instruction/Return.obj
+	@echo ... LLVM/Instruction/Return.i
+	@echo ... LLVM/Instruction/Return.s
+	@echo ... LLVM/Instruction/Store.obj
+	@echo ... LLVM/Instruction/Store.i
+	@echo ... LLVM/Instruction/Store.s
+	@echo ... LLVM/Instruction/Trunc.obj
+	@echo ... LLVM/Instruction/Trunc.i
+	@echo ... LLVM/Instruction/Trunc.s
+	@echo ... LLVM/Instruction/Zext.obj
+	@echo ... LLVM/Instruction/Zext.i
+	@echo ... LLVM/Instruction/Zext.s
+	@echo ... LLVM/IrUser.obj
+	@echo ... LLVM/IrUser.i
+	@echo ... LLVM/IrUser.s
+	@echo ... LLVM/IrValue.obj
+	@echo ... LLVM/IrValue.i
+	@echo ... LLVM/IrValue.s
+	@echo ... LLVM/Module/Module.obj
+	@echo ... LLVM/Module/Module.i
+	@echo ... LLVM/Module/Module.s
+	@echo ... LLVM/Use.obj
+	@echo ... LLVM/Use.i
+	@echo ... LLVM/Use.s
+	@echo ... LLVM/ValueType/ArrayType.obj
+	@echo ... LLVM/ValueType/ArrayType.i
+	@echo ... LLVM/ValueType/ArrayType.s
+	@echo ... LLVM/ValueType/IntegerType.obj
+	@echo ... LLVM/ValueType/IntegerType.i
+	@echo ... LLVM/ValueType/IntegerType.s
+	@echo ... LLVM/ValueType/NumberType.obj
+	@echo ... LLVM/ValueType/NumberType.i
+	@echo ... LLVM/ValueType/NumberType.s
+	@echo ... LLVM/ValueType/PointerType.obj
+	@echo ... LLVM/ValueType/PointerType.i
+	@echo ... LLVM/ValueType/PointerType.s
+	@echo ... LLVM/ValueType/ValueType.obj
+	@echo ... LLVM/ValueType/ValueType.i
+	@echo ... LLVM/ValueType/ValueType.s
 	@echo ... Lexer.obj
 	@echo ... Lexer.i
 	@echo ... Lexer.s
+	@echo ... MIPS/BasicBlock/MipsBasicBlock.obj
+	@echo ... MIPS/BasicBlock/MipsBasicBlock.i
+	@echo ... MIPS/BasicBlock/MipsBasicBlock.s
+	@echo ... MIPS/BasicBlock/MipsBlockBuilder.obj
+	@echo ... MIPS/BasicBlock/MipsBlockBuilder.i
+	@echo ... MIPS/BasicBlock/MipsBlockBuilder.s
+	@echo ... MIPS/Function/Asciiz.obj
+	@echo ... MIPS/Function/Asciiz.i
+	@echo ... MIPS/Function/Asciiz.s
+	@echo ... MIPS/Function/MipsFunction.obj
+	@echo ... MIPS/Function/MipsFunction.i
+	@echo ... MIPS/Function/MipsFunction.s
+	@echo ... MIPS/Function/Word.obj
+	@echo ... MIPS/Function/Word.i
+	@echo ... MIPS/Function/Word.s
+	@echo ... MIPS/Instructioin/Add.obj
+	@echo ... MIPS/Instructioin/Add.i
+	@echo ... MIPS/Instructioin/Add.s
+	@echo ... MIPS/Instructioin/Addi.obj
+	@echo ... MIPS/Instructioin/Addi.i
+	@echo ... MIPS/Instructioin/Addi.s
+	@echo ... MIPS/Instructioin/Beq.obj
+	@echo ... MIPS/Instructioin/Beq.i
+	@echo ... MIPS/Instructioin/Beq.s
+	@echo ... MIPS/Instructioin/Bne.obj
+	@echo ... MIPS/Instructioin/Bne.i
+	@echo ... MIPS/Instructioin/Bne.s
+	@echo ... MIPS/Instructioin/Cmp.obj
+	@echo ... MIPS/Instructioin/Cmp.i
+	@echo ... MIPS/Instructioin/Cmp.s
+	@echo ... MIPS/Instructioin/Div.obj
+	@echo ... MIPS/Instructioin/Div.i
+	@echo ... MIPS/Instructioin/Div.s
+	@echo ... MIPS/Instructioin/J.obj
+	@echo ... MIPS/Instructioin/J.i
+	@echo ... MIPS/Instructioin/J.s
+	@echo ... MIPS/Instructioin/Jal.obj
+	@echo ... MIPS/Instructioin/Jal.i
+	@echo ... MIPS/Instructioin/Jal.s
+	@echo ... MIPS/Instructioin/Jr.obj
+	@echo ... MIPS/Instructioin/Jr.i
+	@echo ... MIPS/Instructioin/Jr.s
+	@echo ... MIPS/Instructioin/La.obj
+	@echo ... MIPS/Instructioin/La.i
+	@echo ... MIPS/Instructioin/La.s
+	@echo ... MIPS/Instructioin/Li.obj
+	@echo ... MIPS/Instructioin/Li.i
+	@echo ... MIPS/Instructioin/Li.s
+	@echo ... MIPS/Instructioin/Lw.obj
+	@echo ... MIPS/Instructioin/Lw.i
+	@echo ... MIPS/Instructioin/Lw.s
+	@echo ... MIPS/Instructioin/Mfhi.obj
+	@echo ... MIPS/Instructioin/Mfhi.i
+	@echo ... MIPS/Instructioin/Mfhi.s
+	@echo ... MIPS/Instructioin/MipsInstruction.obj
+	@echo ... MIPS/Instructioin/MipsInstruction.i
+	@echo ... MIPS/Instructioin/MipsInstruction.s
+	@echo ... MIPS/Instructioin/MipsInstructionBuilder.obj
+	@echo ... MIPS/Instructioin/MipsInstructionBuilder.i
+	@echo ... MIPS/Instructioin/MipsInstructionBuilder.s
+	@echo ... MIPS/Instructioin/Move.obj
+	@echo ... MIPS/Instructioin/Move.i
+	@echo ... MIPS/Instructioin/Move.s
+	@echo ... MIPS/Instructioin/Mul.obj
+	@echo ... MIPS/Instructioin/Mul.i
+	@echo ... MIPS/Instructioin/Mul.s
+	@echo ... MIPS/Instructioin/SLL.obj
+	@echo ... MIPS/Instructioin/SLL.i
+	@echo ... MIPS/Instructioin/SLL.s
+	@echo ... MIPS/Instructioin/Sub.obj
+	@echo ... MIPS/Instructioin/Sub.i
+	@echo ... MIPS/Instructioin/Sub.s
+	@echo ... MIPS/Instructioin/Sw.obj
+	@echo ... MIPS/Instructioin/Sw.i
+	@echo ... MIPS/Instructioin/Sw.s
+	@echo ... MIPS/Instructioin/Syscall.obj
+	@echo ... MIPS/Instructioin/Syscall.i
+	@echo ... MIPS/Instructioin/Syscall.s
+	@echo ... MIPS/MipsSymbol.obj
+	@echo ... MIPS/MipsSymbol.i
+	@echo ... MIPS/MipsSymbol.s
+	@echo ... MIPS/MipsSymbolTable.obj
+	@echo ... MIPS/MipsSymbolTable.i
+	@echo ... MIPS/MipsSymbolTable.s
+	@echo ... MIPS/Module/MipsModule.obj
+	@echo ... MIPS/Module/MipsModule.i
+	@echo ... MIPS/Module/MipsModule.s
+	@echo ... MIPS/RegFile.obj
+	@echo ... MIPS/RegFile.i
+	@echo ... MIPS/RegFile.s
+	@echo ... MidCode.obj
+	@echo ... MidCode.i
+	@echo ... MidCode.s
 	@echo ... Parser.obj
 	@echo ... Parser.i
 	@echo ... Parser.s
 	@echo ... Symbol/Symbol.obj
 	@echo ... Symbol/Symbol.i
 	@echo ... Symbol/Symbol.s
+	@echo ... Symbol/SymbolCon.obj
+	@echo ... Symbol/SymbolCon.i
+	@echo ... Symbol/SymbolCon.s
+	@echo ... Symbol/SymbolFunc.obj
+	@echo ... Symbol/SymbolFunc.i
+	@echo ... Symbol/SymbolFunc.s
 	@echo ... Symbol/SymbolTable.obj
 	@echo ... Symbol/SymbolTable.i
 	@echo ... Symbol/SymbolTable.s
+	@echo ... Symbol/SymbolVar.obj
+	@echo ... Symbol/SymbolVar.i
+	@echo ... Symbol/SymbolVar.s
 	@echo ... Util/utils.obj
 	@echo ... Util/utils.i
 	@echo ... Util/utils.s

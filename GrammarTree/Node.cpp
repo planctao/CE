@@ -138,6 +138,111 @@ bool Node::findIdent(std::string identName, int curScope, bool isVar) {
     return false;
 }
 
+int Node::calDim() {
+    int retDim = 0;
+    for (auto &child : this->children) {
+        if (child.getLeafTokenName() == "[") {
+            retDim++;
+        }
+    }
+    return retDim;
+}
+
+int Node::calConstExp(SymbolTable *curTable) {
+    return this->children[0].calAddExp(curTable);
+}
+
+int Node::calAddExp(SymbolTable *curTable) {
+    if (this->children[0].getGrammarType() == GrammarType::MulExp) {
+        return this->children[0].calMulExp(curTable);
+    }
+    if (this->children[1].getLeafTokenName() == "+") {
+        return this->children[0].calAddExp(curTable) + this->children[2].calMulExp(curTable);
+    }
+    return this->children[0].calAddExp(curTable) - this->children[2].calMulExp(curTable);
+}
+
+/*MulExp → UnaryExp | MulExp ('*' | '/' | '%') UnaryExp*/
+int Node::calMulExp(SymbolTable *curTable) {
+    if (this->children[0].getGrammarType() == GrammarType::UnaryExp) {
+        return this->children[0].calUnaryExp(curTable);
+    }
+    if (this->children[1].getLeafTokenName() == "*") {
+        return this->children[0].calMulExp(curTable) * this->children[2].calUnaryExp(curTable);
+    }
+    else if (this->children[1].getLeafTokenName() == "/") {
+        return this->children[0].calMulExp(curTable) / this->children[2].calUnaryExp(curTable);
+    }
+    else if (this->children[1].getLeafTokenName() == "%") {
+        return this->children[0].calMulExp(curTable) % this->children[2].calUnaryExp(curTable);
+    }
+    else {
+        /*invalid*/
+    }
+    return 0;
+}
+
+/*UnaryExp → PrimaryExp | Ident '(' [FuncRParams] ')' | UnaryOp UnaryExp*/
+int Node::calUnaryExp(SymbolTable *curTable) {
+    if (isPrimaryExp(this->children[0])) {
+        return this->children[0].calPrimaryExp(curTable);
+    }
+    else if (isUnaryOp(this->children[0])) {
+        if (this->children[0].getChildren()[0].getLeafTokenName() == "-") {
+            return -this->children[1].calUnaryExp(curTable);
+        }
+        return this->children[1].calUnaryExp(curTable);
+    }
+    else {
+        /*invalid*/
+    }
+    return 0;
+}
+
+/*PrimaryExp → '(' Exp ')' | LVal | Number*/
+int Node::calPrimaryExp(SymbolTable *curTable) {
+    if (this->children[0].getLeafTokenName() == "(") {
+        return this->children[1].calConstExp(curTable);
+    }
+    else if (isLVal(this->children[0])) {
+        return this->children[0].calLVal(curTable);
+    }
+    else if (isNumber(this->children[0])) {
+        return this->children[0].calNumber();
+    }
+    return 0;
+}
+
+/*LVal → Ident {'[' Exp ']'}*/
+int Node::calLVal(SymbolTable *curTable) {
+    std::string identName = this->children[0].getLeafTokenName();
+    Symbol *sb = curTable->findSymbol(identName);
+    std::vector<int> vectorList;
+    for (auto &child : this->children) {
+        if (child.getGrammarType() == GrammarType::Exp) {
+            vectorList.emplace_back(child.calConstExp(curTable));
+        }
+    }
+    int dim = calDim();
+    if (dim == 0) {
+        return sb->calInit();
+    }
+    else if (dim == 1) {
+        return sb->calInit(vectorList[0]);
+    }
+    else if (dim == 2) {
+        return sb->calInit(vectorList[0],vectorList[1]);
+    }
+    else {
+        std::cout << "error in calLVal in Node.cpp Line == 237\n";
+    }
+    return 0;
+}
+
+int Node::calNumber() {
+    return str2int(this->children[0].getLeafTokenName());
+}
+
 /*CompUnit → {Decl} {FuncDef} MainFuncDef*/
 void Node::buildSymbolTable(int curScope,int preScope) {
     SymbolTable tmpST(0,-1);
@@ -1111,4 +1216,100 @@ void Node::error_output() {
 std::vector<int> Node::buildConstExp(int curScope, int preScope) {
     return this->children[0].buildAddExp(curScope,preScope);
 }
+
+std::vector<int> Node::calDimList(SymbolTable* curTable) {
+    std::vector<int> ans;
+    for (int i = 0;i < this->getChildren().size();i++) {
+        if (this->children[i].getLeafTokenName() == "[") {
+            ans.emplace_back(this->children[i+1].calConstExp(curTable));
+        }
+    }
+    return ans;
+}
+
+/*ConstInitVal → ConstExp | '{' [ ConstInitVal { ',' ConstInitVal } ] '}'*/
+std::vector<int> Node::calConstInitVal(SymbolTable *curTable) {
+    std::vector<int> ans;
+    if (isConstExp(this->children[0])) {
+        ans.emplace_back(this->children[0].calConstExp(curTable));
+    }
+    else {
+        for (auto &child : this->children) {
+            if (isConstInitVal(child)) {
+                std::vector<int> tmp = child.calConstInitVal(curTable);
+                ans.insert(ans.end(),tmp.begin(),tmp.end());
+            }
+        }
+    }
+    return ans;
+}
+
+/*InitVal → Exp | '{' [ InitVal { ',' InitVal } ] '}'*/
+std::vector<int> Node::calInitVal(SymbolTable* curTable) {
+    std::vector<int> ans;
+    if (this->children[0].getGrammarType() == GrammarType::Exp) {
+        ans.emplace_back(this->children[0].calConstExp(curTable));
+    }
+    else {
+        for (auto &child : this->children) {
+            if (isInitVal(child)) {
+                std::vector<int> tmp = child.calInitVal(curTable);
+                ans.insert(ans.end(),tmp.begin(),tmp.end());
+            }
+        }
+    }
+    return ans;
+}
+
+int Node::forFindForStmt2() {
+    for (int i = 0;i < this->getChildren().size();i++) {
+        if (this->getChildren().at(i).getLeafTokenName() == ")") {
+            if (isForStmt(this->getChildren().at(i-1))) {
+                return i-1;
+            }
+            else {
+                return -1;
+            }
+        }
+    }
+    return -1;
+}
+
+int Node::forFindForStmt1() {
+    for (int i = 0;i < this->getChildren().size();i++) {
+        if (this->getChildren().at(i).getLeafTokenName() == "(") {
+            if (isForStmt(this->getChildren().at(i+1))) {
+                return i+1;
+            }
+            else {
+                return -1;
+            }
+        }
+    }
+    return -1;
+}
+
+int Node::forFindCond() {
+    for (int i = 0;i < this->getChildren().size();i++) {
+        if (this->getChildren().at(i).getLeafTokenName() == ";") {
+            if (isCond(this->getChildren().at(i+1))) {
+                return i+1;
+            }
+            else {
+                return -1;
+            }
+        }
+    }
+    return -1;
+}
+
+bool Node::returnInteger() {
+    if (this->children.at(0).getGrammarType() == GrammarType::FuncType) {
+        return this->children.at(0).getChildren().at(0).getLeafTokenName() == "int";
+    }
+    return this->children.at(0).getLeafTokenName() == "int";
+}
+
+
+
 

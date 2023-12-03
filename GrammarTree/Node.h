@@ -53,8 +53,23 @@ public:
     void fileWrite(std::vector<std::string>& a);
     GrammarType getGrammarType();
     static bool findIdent(std::string identName, int curScope,bool isVar);
-    void buildSymbolTable(int curScope,int preScope);
+    int calDim();
+    std::vector<int> calDimList(SymbolTable* curTable);
+    int calConstExp(SymbolTable* curTable);
+    int calAddExp(SymbolTable* curTable);
+    int calMulExp(SymbolTable* curTable);
+    int calUnaryExp(SymbolTable* curTable);
+    int calPrimaryExp(SymbolTable* curTable);
+    int calLVal(SymbolTable* curTable);
+    int calNumber();
+    std::vector<int> calConstInitVal(SymbolTable* curTable);
+    std::vector<int> calInitVal(SymbolTable* curTable);
+    int forFindForStmt1();
+    int forFindCond();
+    int forFindForStmt2();
+    bool returnInteger();
 
+    void buildSymbolTable(int curScope,int preScope);
     void buildConstDecl(int curScope,int preScope);
     void buildConstDef(int curScope,int preScope);
     void buildConstInitial(int curScope,int preScope);

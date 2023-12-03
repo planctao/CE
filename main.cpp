@@ -1,14 +1,20 @@
 #include <iostream>
+#include <fstream>
 #include"Lexer.h"
 #include"Parser.h"
 #include"Error/Error.h"
+#include"MidCode.h"
+#include "./LLVM/Module/Module.h"
 #include<vector>
+#include "./MIPS/Module/MipsModule.h"
 //#define MAINDEBUG 1
 #define MODE 0
 #define TEST 1
 #define LEXER 2
 #define PARSER 3
 #define ERROR 4
+#define LLVM 5
+#define MIPS1 6
 void fineError() {
     std::string folderPath("D:\\aaaaaaaaaaaa\\CE\\test\\20221105191751099\\full\\A");
 
@@ -46,8 +52,9 @@ void fineError() {
 }
 
 int main(int argc, char* argv[]) {
+
     const char* input_path = "testfile.txt";
-    int mode = ERROR;
+    int mode = MIPS1;
     switch(mode) {
         case TEST: {
             fineError();
@@ -80,6 +87,30 @@ int main(int argc, char* argv[]) {
             break;
         }
 
+        case LLVM: {
+            Parser parser(input_path);
+            Node tmpNode = parser.parse();
+            Module *module = new Module(&tmpNode);
+            module->genCompUnit();
+            std::string ans = module->irOutput();
+            module->fileOutput(ans);
+            break;
+        }
+
+        case MIPS1: {
+            Parser parser(input_path);
+            Node tmpNode = parser.parse();
+            Module *module = new Module(&tmpNode);
+            module->genCompUnit();
+            std::string llvmAns = module->irOutput();
+            module->fileOutput(llvmAns);
+            MipsModule *mipsModule = new MipsModule(module);
+            mipsModule->genMipsModule();
+            std::string ans = mipsModule->mipsOutput();
+            std::ofstream fout("mips.txt");
+            fout << ans;
+            fout.close();
+        }
 
         default:
             break;

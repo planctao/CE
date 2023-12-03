@@ -1,14 +1,17 @@
 <component name="ProjectDictionaryState">
   <dictionary name="me">
     <words>
+      <w>asciiz</w>
       <w>breaktk</w>
       <w>consttk</w>
       <w>continuetk</w>
       <w>elsetk</w>
       <w>fortk</w>
+      <w>getelementptr</w>
       <w>getintk</w>
       <w>getinttk</w>
       <w>grammartype</w>
+      <w>icmp</w>
       <w>idenfr</w>
       <w>iftk</w>
       <w>intcon</w>
@@ -18,18 +21,23 @@
       <w>lparent</w>
       <w>maindebug</w>
       <w>maintk</w>
+      <w>mfhi</w>
       <w>minu</w>
       <w>mult</w>
+      <w>nulltype</w>
       <w>printftk</w>
       <w>rbrack</w>
       <w>returntk</w>
       <w>rparent</w>
+      <w>sdiv</w>
       <w>semicn</w>
       <w>strcon</w>
       <w>tokentype</w>
       <w>unknowed</w>
       <w>voidtk</w>
       <w>voidtl</w>
+      <w>zeroinitializer</w>
+      <w>zext</w>
     </words>
   </dictionary>
 </component>

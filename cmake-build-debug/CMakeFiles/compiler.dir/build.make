@@ -186,6 +186,825 @@ CMakeFiles/compiler.dir/Error/ErrorToken.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Error/ErrorToken.cpp.s"
 	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Error\ErrorToken.cpp -o CMakeFiles\compiler.dir\Error\ErrorToken.cpp.s
 
+CMakeFiles/compiler.dir/MidCode.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MidCode.cpp.obj: ../MidCode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/compiler.dir/MidCode.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MidCode.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MidCode.cpp
+
+CMakeFiles/compiler.dir/MidCode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MidCode.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MidCode.cpp > CMakeFiles\compiler.dir\MidCode.cpp.i
+
+CMakeFiles/compiler.dir/MidCode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MidCode.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MidCode.cpp -o CMakeFiles\compiler.dir\MidCode.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj: ../LLVM/Instruction/Instruction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Instruction.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Instruction.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Instruction.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Instruction.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Instruction.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Instruction.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj: ../LLVM/Instruction/BinInstruction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\BinInstruction.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\BinInstruction.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\BinInstruction.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\BinInstruction.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\BinInstruction.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\BinInstruction.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj: ../LLVM/IrValue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\IrValue.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrValue.cpp
+
+CMakeFiles/compiler.dir/LLVM/IrValue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/IrValue.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrValue.cpp > CMakeFiles\compiler.dir\LLVM\IrValue.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/IrValue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/IrValue.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrValue.cpp -o CMakeFiles\compiler.dir\LLVM\IrValue.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj: ../LLVM/IrUser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\IrUser.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrUser.cpp
+
+CMakeFiles/compiler.dir/LLVM/IrUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/IrUser.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrUser.cpp > CMakeFiles\compiler.dir\LLVM\IrUser.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/IrUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/IrUser.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\IrUser.cpp -o CMakeFiles\compiler.dir\LLVM\IrUser.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Use.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Use.cpp.obj: ../LLVM/Use.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/compiler.dir/LLVM/Use.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Use.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Use.cpp
+
+CMakeFiles/compiler.dir/LLVM/Use.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Use.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Use.cpp > CMakeFiles\compiler.dir\LLVM\Use.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Use.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Use.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Use.cpp -o CMakeFiles\compiler.dir\LLVM\Use.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj: ../LLVM/BasicBlock/BasicBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlock.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlock.cpp
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlock.cpp > CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlock.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlock.cpp -o CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlock.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj: ../LLVM/Module/Module.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Module\Module.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Module\Module.cpp
+
+CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Module\Module.cpp > CMakeFiles\compiler.dir\LLVM\Module\Module.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Module\Module.cpp -o CMakeFiles\compiler.dir\LLVM\Module\Module.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj: ../LLVM/Function/Function.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Function\Function.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Function.cpp
+
+CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Function.cpp > CMakeFiles\compiler.dir\LLVM\Function\Function.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Function.cpp -o CMakeFiles\compiler.dir\LLVM\Function\Function.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj: ../LLVM/Function/GlobalVar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Function\GlobalVar.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\GlobalVar.cpp
+
+CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\GlobalVar.cpp > CMakeFiles\compiler.dir\LLVM\Function\GlobalVar.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\GlobalVar.cpp -o CMakeFiles\compiler.dir\LLVM\Function\GlobalVar.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj: ../LLVM/Function/Param.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Function\Param.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Param.cpp
+
+CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Param.cpp > CMakeFiles\compiler.dir\LLVM\Function\Param.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\Param.cpp -o CMakeFiles\compiler.dir\LLVM\Function\Param.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj: ../LLVM/BasicBlock/BasicBlockBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlockBuilder.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlockBuilder.cpp
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlockBuilder.cpp > CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlockBuilder.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\BasicBlock\BasicBlockBuilder.cpp -o CMakeFiles\compiler.dir\LLVM\BasicBlock\BasicBlockBuilder.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj: ../LLVM/Instruction/InstructionBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\InstructionBuilder.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\InstructionBuilder.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\InstructionBuilder.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\InstructionBuilder.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\InstructionBuilder.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\InstructionBuilder.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj: ../LLVM/Instruction/AllocInstruction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\AllocInstruction.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\AllocInstruction.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\AllocInstruction.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\AllocInstruction.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\AllocInstruction.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\AllocInstruction.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj: ../LLVM/Instruction/Store.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Store.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Store.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Store.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Store.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Store.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Store.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj: ../LLVM/ValueType/ValueType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\ValueType\ValueType.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ValueType.cpp
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ValueType.cpp > CMakeFiles\compiler.dir\LLVM\ValueType\ValueType.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ValueType.cpp -o CMakeFiles\compiler.dir\LLVM\ValueType\ValueType.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj: ../LLVM/ValueType/ArrayType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\ValueType\ArrayType.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ArrayType.cpp
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ArrayType.cpp > CMakeFiles\compiler.dir\LLVM\ValueType\ArrayType.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\ArrayType.cpp -o CMakeFiles\compiler.dir\LLVM\ValueType\ArrayType.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj: ../LLVM/ValueType/IntegerType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\ValueType\IntegerType.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\IntegerType.cpp
+
+CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\IntegerType.cpp > CMakeFiles\compiler.dir\LLVM\ValueType\IntegerType.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\IntegerType.cpp -o CMakeFiles\compiler.dir\LLVM\ValueType\IntegerType.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj: ../LLVM/ValueType/NumberType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\ValueType\NumberType.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\NumberType.cpp
+
+CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\NumberType.cpp > CMakeFiles\compiler.dir\LLVM\ValueType\NumberType.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\NumberType.cpp -o CMakeFiles\compiler.dir\LLVM\ValueType\NumberType.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj: ../LLVM/Instruction/Load.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Load.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Load.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Load.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Load.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Load.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Load.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj: ../LLVM/Instruction/Alloc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Alloc.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Alloc.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Alloc.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Alloc.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Alloc.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Alloc.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj: ../LLVM/ValueType/PointerType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\ValueType\PointerType.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\PointerType.cpp
+
+CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\PointerType.cpp > CMakeFiles\compiler.dir\LLVM\ValueType\PointerType.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\ValueType\PointerType.cpp -o CMakeFiles\compiler.dir\LLVM\ValueType\PointerType.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj: ../LLVM/Instruction/Call.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Call.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Call.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Call.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Call.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Call.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Call.cpp.s
+
+CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj: ../Symbol/SymbolCon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\Symbol\SymbolCon.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolCon.cpp
+
+CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolCon.cpp > CMakeFiles\compiler.dir\Symbol\SymbolCon.cpp.i
+
+CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolCon.cpp -o CMakeFiles\compiler.dir\Symbol\SymbolCon.cpp.s
+
+CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj: ../Symbol/SymbolVar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\Symbol\SymbolVar.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolVar.cpp
+
+CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolVar.cpp > CMakeFiles\compiler.dir\Symbol\SymbolVar.cpp.i
+
+CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolVar.cpp -o CMakeFiles\compiler.dir\Symbol\SymbolVar.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj: ../LLVM/Function/FunctionBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Function\FunctionBuilder.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\FunctionBuilder.cpp
+
+CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\FunctionBuilder.cpp > CMakeFiles\compiler.dir\LLVM\Function\FunctionBuilder.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Function\FunctionBuilder.cpp -o CMakeFiles\compiler.dir\LLVM\Function\FunctionBuilder.cpp.s
+
+CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj: ../Symbol/SymbolFunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\Symbol\SymbolFunc.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolFunc.cpp
+
+CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolFunc.cpp > CMakeFiles\compiler.dir\Symbol\SymbolFunc.cpp.i
+
+CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\Symbol\SymbolFunc.cpp -o CMakeFiles\compiler.dir\Symbol\SymbolFunc.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj: ../LLVM/Instruction/Return.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Return.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Return.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Return.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Return.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Return.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Return.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj: ../LLVM/Instruction/GEP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\GEP.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\GEP.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\GEP.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\GEP.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\GEP.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\GEP.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj: ../MIPS/Module/MipsModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Module\MipsModule.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Module\MipsModule.cpp
+
+CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Module\MipsModule.cpp > CMakeFiles\compiler.dir\MIPS\Module\MipsModule.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Module\MipsModule.cpp -o CMakeFiles\compiler.dir\MIPS\Module\MipsModule.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj: ../MIPS/Function/Word.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Function\Word.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Word.cpp
+
+CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Word.cpp > CMakeFiles\compiler.dir\MIPS\Function\Word.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Word.cpp -o CMakeFiles\compiler.dir\MIPS\Function\Word.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj: ../MIPS/Function/Asciiz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Function\Asciiz.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Asciiz.cpp
+
+CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Asciiz.cpp > CMakeFiles\compiler.dir\MIPS\Function\Asciiz.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\Asciiz.cpp -o CMakeFiles\compiler.dir\MIPS\Function\Asciiz.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj: ../MIPS/Function/MipsFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Function\MipsFunction.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\MipsFunction.cpp
+
+CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\MipsFunction.cpp > CMakeFiles\compiler.dir\MIPS\Function\MipsFunction.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Function\MipsFunction.cpp -o CMakeFiles\compiler.dir\MIPS\Function\MipsFunction.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj: ../MIPS/BasicBlock/MipsBasicBlock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBasicBlock.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBasicBlock.cpp
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBasicBlock.cpp > CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBasicBlock.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBasicBlock.cpp -o CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBasicBlock.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj: ../MIPS/BasicBlock/MipsBlockBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBlockBuilder.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBlockBuilder.cpp
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBlockBuilder.cpp > CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBlockBuilder.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\BasicBlock\MipsBlockBuilder.cpp -o CMakeFiles\compiler.dir\MIPS\BasicBlock\MipsBlockBuilder.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj: ../MIPS/Instructioin/MipsInstruction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstruction.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstruction.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstruction.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstruction.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstruction.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstruction.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj: ../MIPS/MipsSymbolTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\MipsSymbolTable.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbolTable.cpp
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbolTable.cpp > CMakeFiles\compiler.dir\MIPS\MipsSymbolTable.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbolTable.cpp -o CMakeFiles\compiler.dir\MIPS\MipsSymbolTable.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj: ../MIPS/MipsSymbol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\MipsSymbol.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbol.cpp
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbol.cpp > CMakeFiles\compiler.dir\MIPS\MipsSymbol.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\MipsSymbol.cpp -o CMakeFiles\compiler.dir\MIPS\MipsSymbol.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj: ../MIPS/Instructioin/MipsInstructionBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstructionBuilder.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstructionBuilder.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstructionBuilder.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstructionBuilder.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\MipsInstructionBuilder.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\MipsInstructionBuilder.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj: ../MIPS/Instructioin/La.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\La.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\La.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\La.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\La.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\La.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\La.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj: ../MIPS/Instructioin/Li.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Li.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Li.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Li.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Li.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Li.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Li.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj: ../MIPS/Instructioin/Syscall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Syscall.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Syscall.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Syscall.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Syscall.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Syscall.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Syscall.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj: ../MIPS/RegFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\RegFile.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\RegFile.cpp
+
+CMakeFiles/compiler.dir/MIPS/RegFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/RegFile.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\RegFile.cpp > CMakeFiles\compiler.dir\MIPS\RegFile.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/RegFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/RegFile.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\RegFile.cpp -o CMakeFiles\compiler.dir\MIPS\RegFile.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj: ../MIPS/Instructioin/Lw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Lw.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Lw.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Lw.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Lw.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Lw.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Lw.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj: ../MIPS/Instructioin/Sw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Sw.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sw.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sw.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Sw.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sw.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Sw.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj: ../MIPS/Instructioin/Move.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Move.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Move.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Move.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Move.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Move.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Move.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj: ../MIPS/Instructioin/Add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Add.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Add.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Add.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Add.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Add.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Add.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj: ../MIPS/Instructioin/Addi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Addi.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Addi.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Addi.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Addi.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Addi.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Addi.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj: ../MIPS/Instructioin/Sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Sub.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sub.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sub.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Sub.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Sub.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Sub.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj: ../MIPS/Instructioin/Mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Mul.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mul.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mul.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Mul.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mul.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Mul.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj: ../MIPS/Instructioin/Mfhi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Mfhi.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mfhi.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mfhi.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Mfhi.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Mfhi.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Mfhi.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj: ../MIPS/Instructioin/Div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Div.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Div.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Div.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Div.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Div.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Div.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj: ../MIPS/Instructioin/Jal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Jal.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jal.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jal.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Jal.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jal.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Jal.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj: ../MIPS/Instructioin/Jr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Jr.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jr.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jr.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Jr.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Jr.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Jr.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj: ../LLVM/Instruction/Icmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Icmp.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Icmp.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Icmp.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Icmp.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Icmp.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Icmp.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj: ../LLVM/Instruction/Br.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Br.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Br.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Br.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Br.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Br.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Br.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj: ../LLVM/Instruction/Zext.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Zext.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Zext.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Zext.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Zext.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Zext.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Zext.cpp.s
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj: ../LLVM/Instruction/Trunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\LLVM\Instruction\Trunc.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Trunc.cpp
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Trunc.cpp > CMakeFiles\compiler.dir\LLVM\Instruction\Trunc.cpp.i
+
+CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\LLVM\Instruction\Trunc.cpp -o CMakeFiles\compiler.dir\LLVM\Instruction\Trunc.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj: ../MIPS/Instructioin/SLL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\SLL.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\SLL.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\SLL.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\SLL.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\SLL.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\SLL.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj: ../MIPS/Instructioin/Cmp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Cmp.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Cmp.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Cmp.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Cmp.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Cmp.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Cmp.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj: ../MIPS/Instructioin/Beq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Beq.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Beq.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Beq.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Beq.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Beq.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Beq.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj: ../MIPS/Instructioin/Bne.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\Bne.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Bne.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Bne.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\Bne.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\Bne.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\Bne.cpp.s
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj: CMakeFiles/compiler.dir/flags.make
+CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj: ../MIPS/Instructioin/J.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\compiler.dir\MIPS\Instructioin\J.cpp.obj -c D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\J.cpp
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.i"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\J.cpp > CMakeFiles\compiler.dir\MIPS\Instructioin\J.cpp.i
+
+CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.s"
+	D:\aaaaaaaaaaaa\CE\env\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\aaaaaaaaaaaa\CE\compiler\MIPS\Instructioin\J.cpp -o CMakeFiles\compiler.dir\MIPS\Instructioin\J.cpp.s
+
 # Object files for target compiler
 compiler_OBJECTS = \
 "CMakeFiles/compiler.dir/main.cpp.obj" \
@@ -197,7 +1016,70 @@ compiler_OBJECTS = \
 "CMakeFiles/compiler.dir/Symbol/Symbol.cpp.obj" \
 "CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj" \
 "CMakeFiles/compiler.dir/Error/Error.cpp.obj" \
-"CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj"
+"CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj" \
+"CMakeFiles/compiler.dir/MidCode.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Use.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj" \
+"CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj" \
+"CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj" \
+"CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj" \
+"CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj" \
+"CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj"
 
 # External object files for target compiler
 compiler_EXTERNAL_OBJECTS =
@@ -212,11 +1094,74 @@ compiler.exe: CMakeFiles/compiler.dir/Symbol/Symbol.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Symbol/SymbolTable.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Error/Error.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/Error/ErrorToken.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MidCode.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Instruction.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/BinInstruction.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/IrValue.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/IrUser.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Use.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlock.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Module/Module.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Function/Function.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Function/GlobalVar.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Function/Param.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/BasicBlock/BasicBlockBuilder.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/InstructionBuilder.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/AllocInstruction.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Store.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/ValueType/ValueType.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/ValueType/ArrayType.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/ValueType/IntegerType.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/ValueType/NumberType.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Load.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Alloc.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/ValueType/PointerType.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Call.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/Symbol/SymbolCon.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/Symbol/SymbolVar.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Function/FunctionBuilder.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/Symbol/SymbolFunc.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Return.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/GEP.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Module/MipsModule.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Function/Word.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Function/Asciiz.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Function/MipsFunction.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBasicBlock.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/BasicBlock/MipsBlockBuilder.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstruction.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/MipsSymbolTable.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/MipsSymbol.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/MipsInstructionBuilder.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/La.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Li.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Syscall.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/RegFile.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Lw.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Sw.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Move.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Add.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Addi.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Sub.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Mul.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Mfhi.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Div.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Jal.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Jr.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Icmp.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Br.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Zext.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/LLVM/Instruction/Trunc.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/SLL.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Cmp.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Beq.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/Bne.cpp.obj
+compiler.exe: CMakeFiles/compiler.dir/MIPS/Instructioin/J.cpp.obj
 compiler.exe: CMakeFiles/compiler.dir/build.make
 compiler.exe: CMakeFiles/compiler.dir/linklibs.rsp
 compiler.exe: CMakeFiles/compiler.dir/objects1.rsp
 compiler.exe: CMakeFiles/compiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable compiler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\aaaaaaaaaaaa\CE\compiler\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable compiler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\compiler.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
